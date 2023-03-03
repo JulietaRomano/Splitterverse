@@ -575,6 +575,7 @@ letter-spacing: 0.0625em;
   .portada-img{
     background-size: cover;
     background-position: center;
+    height: 90vh;
   }
   /*video*/
   .video{
