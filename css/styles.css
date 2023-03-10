@@ -81,6 +81,7 @@ p {
     font-family: var(--titulo-font-family);
     font-size: 2.7rem;
     color: var(--color-primary);
+    margin-bottom: 3rem;
     }
   .textos-p{
       font-family: var(--textos-font-family);
@@ -255,11 +256,6 @@ p {
     border-radius: 1rem;
     
   }
-  .titulo_portada{
-  font-family: var(--titulo-font-family);
-  color: var(--color-primary);
-  font-size: 3rem;
-  }
   .texto_portada{
     font-family: var(--textos-font-family);
     color: var(--color-font);
@@ -300,7 +296,7 @@ p {
 /* -------- Sinopsis -------- */
 
   .sinopsis-section {
-    padding: 0rem 3rem 5rem 3rem;
+    padding: 1rem 3rem 5rem 3rem;
     background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(15, 15, 15, 0.415) 75%, #000000 100%);
     color: var(--color-font);
   }
@@ -484,20 +480,26 @@ p {
     justify-content: center;
     flex-direction: column;
     width: 40%;
-    padding-top: 5rem;
+    padding-top: 1rem;
+  } 
+  .img_shirox{
+    margin: auto;
+    width: 30vw;
   } 
 
   .war-btn {
     display: flex;
     justify-content:center;
     align-items: center;
-    height: 10vh;
     flex-wrap: wrap;
     margin-top: 3rem;
+    margin-bottom: 6rem;
   }
 
   .war-btn button {
-    display: block;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     position: relative;
     width: 5rem;
     height: 5rem;
@@ -654,6 +656,7 @@ p {
 
   /*Sinopsis*/
 
+
   .sinopsis_texto-container {
     padding: 0rem 1rem 0rem 1rem;
   }
@@ -669,7 +672,7 @@ p {
   .redes-img-bg{
     margin-top: 0rem;
     background: #000;
-    height: 20vh;
+    height: 30vh;
   }
   .section-redes{
     margin-top: 4rem;
@@ -681,9 +684,10 @@ p {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding-top: 0rem;
+    padding-top: 2rem;
   } 
   .redes-img_rsp{
+    margin-top: 2rem;
     height:68%;
     display: block;
   }
@@ -697,7 +701,8 @@ p {
   /*BOTONES Redes*/
 
   .war-btn{
-    margin-top: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
   }
   .botones{
     margin:3rem 0rem 3rem 0rem;
@@ -733,11 +738,11 @@ p {
       width: 100%;
   }
   .sinopsis_container {
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
    /*Redes*/
   .war-btn{
-    margin-top: 0rem;
+      margin-top: 2rem;
   }  
    /*404*/
    .notfound_Caja{
@@ -756,7 +761,6 @@ p {
   .notfound_img{
     width: 50%;
     height: 50%;
-    border: solid;
     }
 }
 
@@ -838,14 +842,12 @@ p {
     display: block;
   }
 
-  /*Botones*/
-  .button-wrapper {
-    height: 6rem;
-    width: 36%;
+  /*Redes*/
+  .redes-img-bg {
+    height: 25vh;
   }
-  .btn-a.background-button {
-    width: 80%;
-    height: 80%;
+  .redes-img_rsp{
+    margin-top: 0rem;
   }
 
      /*404*/
@@ -877,13 +879,9 @@ p {
   .sinopsis_container {
     margin-top: 4rem;
   }
-  .redes-img-bg {
-    height: 15vh;
-  }
+
   /*REDES*/
-  .redes-img_rsp {
-    margin-top: 3rem;
-  }  
+
   .caja_redes {
     padding-top: 2rem;
   }
@@ -900,7 +898,7 @@ p {
         
 }
   
-/* ------- 390px ------*/
+/* ------- 420px ------*/
     
   
 @media (max-width: 420px) {
@@ -941,6 +939,9 @@ p {
   }
   .redes-img-bg {
     height: 13vh;
+  }
+  .redes-img-bg {
+    height: 20vh;
   }
  /*404*/
   
@@ -997,9 +998,11 @@ width: 100%;
 padding: 1em;
 width: 100%;
   }
+  /*REDES*/
+  .redes-img-bg {
+    height: 20vh;
+  }
    /*404*/
-
-
 
   .notfound_container{
     height: 70vh;
@@ -1049,7 +1052,7 @@ width: 100%;
     
   }
   .redes-img-bg {
-    height: 13vh;
+    height: 16vh;
   }
   .war-btn {
     flex-wrap: nowrap;
