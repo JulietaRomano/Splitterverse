@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box ;
 }
+@font-face {
+  font-family: Action man ;
+  src: url(../assets/font/action_man/Action_Man.ttf);
+}
+@font-face {
+  font-family: Made soulmaze ;
+  src: url(../assets/font/made_soulmaze/soulmaze.otf);
+}
 html {
     scroll-padding-top: calc(4.5rem - 1px);
   }
