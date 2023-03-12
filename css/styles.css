@@ -799,7 +799,7 @@ p {
     
   /* Portada */
   .portada-container{
-    height: 80vh;
+    height: 84vh;
   }
   .portada-img{
     background: url(../assets/portada_responsive.jpg);
@@ -833,11 +833,12 @@ p {
   /*Sinopsis*/
   .sinopsis-caja{
     width: 100vw;
+    margin-top: 4rem;
   }
   .sinopsis-img{
     width: 100vw;
     height: 40%;
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
   .sinopsis-img1{
     width: 50% ;
