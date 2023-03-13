@@ -39,6 +39,7 @@ p {
 /*Preloader*/
   .hidden{
     overflow: hidden;
+    height: 100vh;
   }
 
   .preloader{
