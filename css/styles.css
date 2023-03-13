@@ -313,8 +313,9 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 6rem;
     text-align: center;
+    padding-top: 4rem;
   }
   .sinopsis-caja{
     width: 45vw;
@@ -697,7 +698,7 @@ p {
     padding-top: 2rem;
   } 
   .redes-img_rsp{
-    margin-top: 2rem;
+    margin-top: 4rem;
     height:68%;
     display: block;
   }
@@ -762,7 +763,7 @@ p {
       width: 100%;
   }
   .sinopsis_container {
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
    /*Redes*/
   .war-btn{
@@ -871,9 +872,6 @@ p {
   .redes-img-bg {
     height: 25vh;
   }
-  .redes-img_rsp{
-    margin-top: 0rem;
-  }
 
      /*404*/
   
@@ -887,7 +885,6 @@ p {
       }
   
 }
-
 
 /* ------- 490px ------*/
 
@@ -906,7 +903,7 @@ p {
     padding: 0rem 1rem 0rem 1rem;
   }
   .sinopsis_container {
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 
   /*REDES*/
