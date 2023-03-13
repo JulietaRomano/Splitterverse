@@ -738,7 +738,13 @@ p {
   *{
     font-size: 13px;
   }
-  
+  .fixed-top{
+    position: unset;
+  }
+  .nav-item{
+    padding: 1rem;
+    border-bottom: solid rgb(13, 13, 13)
+  }
   .textos-p{
     font-size: 1.4rem;
   }
@@ -793,11 +799,8 @@ p {
     font-size: 12px;
   }
   .nav-link{
-    font-size: 15px;
+    font-size: 16px;
     }
-  .fixed-top{
-    position: unset;
-  }
   .textos-p{
     font-size: 1.6rem;
   }
@@ -893,8 +896,9 @@ p {
     font-size: 11px;
   }
   .nav-link{
-    font-size: 14px;
+    font-size: 16px;
     }
+   
   .textos-p{
     font-size: 16px;
   }
@@ -932,8 +936,9 @@ p {
     font-size: 9px;
   }
   .nav-link{
-    font-size: 13px;
+    font-size: 16px;
     }
+
   .textos-p{
     font-size: 15px;
   }
@@ -992,7 +997,7 @@ width: 100%;
     font-size: 9px;
   }
   .nav-link{
-    font-size: 12px;
+    font-size: 15px;
     }
   .textos-p{
     font-size: 13px;
