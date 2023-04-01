@@ -1145,8 +1145,9 @@ width: 100%;
 
 /*------ PErsonajes -------*/
 .portada-container_personajes{
-  border: solid red;
-  height: 60vh;
+  height: 80vh;
+  background-image: url(../assets/BANNER.jpg);
+  background-size: cover;
 }
 
 .main_personajes{
@@ -1325,11 +1326,19 @@ width: 100%;
 	font-weight: 400;
 	min-height: 100vh;
 }
+.ju{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 
 .slider__navi {
+  
 	position: absolute;
-	top: 50%;
-	right: 20px;
+  display: flex;
+  justify-content: space-around;
+	top: 90%;
+  width: 60%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
@@ -1360,7 +1369,11 @@ width: 100%;
   background-image: url(../assets/personajes/roby_personaje.jpg);
 }
 .slider__navi a:nth-child(5){
+  background-image: url(../assets/personajes/victor_personaje.jpg);
+}
+.slider__navi a:nth-child(6){
   background-image: url(../assets/personajes/kuren_personaje.jpg);
+
 }
 .slider__navi a.active {
 border: solid rgb(255, 255, 255);
@@ -1399,7 +1412,7 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 	font-size: 15px;
 	letter-spacing: 0.5rem;
 	text-transform: uppercase;
-	margin-top: 40px;
+	margin-top: 0px;
   text-align: justify;
   font-family: var(--textos-font-family);
 }
@@ -1470,37 +1483,34 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 	opacity: 1;
 }
 
-/* Randal */
 
-.flex--piplup .flex__item--left {
-	background: #fbb504;
-}
-
-.flex--piplup .flex__item--right {
-	background: #f5e78f;
-}
-
-/* Pikachu */
-
+/* Marcos */
 .flex--pikachu .flex__item--left {
-	background: var(--color-secundary);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
+	background: #d15a1f;
 }
-
 .flex--pikachu .flex__item--right {
-	background: #f6cc9f;
-  
+	background: #020202;
 }
+
+/* Randal */
+.flex--piplup .flex__item--left {
+	background: #a27709;
+}
+.flex--piplup .flex__item--right {
+	background: #020202;
+}
+
+
+
 
 /* Vale */
 
 .flex--blaziken .flex__item--left {
-	background: #b71f96;
+	background: #791d65;
 }
 
 .flex--blaziken .flex__item--right {
-	background: #f6cef3;;
+	background: #020202;
 }
 
 /* Dialga */
@@ -1510,7 +1520,7 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .flex--dialga .flex__item--right {
-	background: #ade8f7;
+	background: #020202;
 }
 
 /* Zekrom */
@@ -1520,7 +1530,17 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 .flex--zekrom .flex__item--right {
-	background: #a7bcbb;
+	background: #020202;
+}
+
+/* victor */
+
+.flex--victor .flex__item--left {
+	background: #8e0702;
+}
+
+.flex--victor .flex__item--right {
+  background: #020202;
 }
 
 .flex__content {
@@ -1573,4 +1593,18 @@ box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 .flex__container.animate--end .pokemon__img {
 	transform: translate3d(200px,0,0);
 	opacity: 0;
+}
+
+
+/*Footer*/
+.footer_final{
+  padding: 2.5rem;
+  background-color: #000000;
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_final img{
+  width: 15vw;
 }
