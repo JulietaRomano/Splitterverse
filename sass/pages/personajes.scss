@@ -1,0 +1,365 @@
+/*---- Personajes seccion ------*/
+
+.portada-container_personajes{
+height: 90vh;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.415) 75%, #000 100%),url(../assets/portada.jpg);
+background-size: cover;
+  }
+  
+  /*--------------- Slider de personajes-------------------*/
+  
+
+  .slider_container {
+      position: relative;
+      min-height: 100vh;
+  }
+
+  /*- Botones con personajes para mover slider -*/
+
+
+  .slider_botones{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .slider__navi {
+    
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 90%;
+    width: 60%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    z-index: 999;
+  }
+  
+  .slider__navi a {
+    display: block;
+    height: 100px;
+    border-radius: 100%;
+    width: 100px;
+    margin: 30px 0;
+    text-indent: -9999px;
+    box-shadow: none;
+    border: none;
+    background-image: url(../assets/personajes/marcos_personaje.jpg);
+    background-size: contain;
+  }
+  .slider__navi a:nth-child(2){
+    background-image: url(../assets/sobre-nosotros_randal.png);
+  }
+  .slider__navi a:nth-child(3){
+    background-image: url(../assets/personajes/vale_personaje.jpg);
+  }
+  .slider__navi a:nth-child(4){
+    background-image: url(../assets/personajes/roby_personaje.jpg);
+  }
+  .slider__navi a:nth-child(5){
+    background-image: url(../assets/personajes/victor_personaje.jpg);
+  }
+  .slider__navi a:nth-child(6){
+    background-image: url(../assets/personajes/kuren_personaje.jpg);
+  }
+  .slider__navi a.active {
+  border: solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+  
+  /*----- Contenedores de personajes ----*/
+
+  .flex__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -o-flex-flow: row wrap;
+    flex-flow: row wrap; 
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -o-justify-content: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .flex__container.flex--active {
+      z-index: 2;
+  }
+
+
+
+/*--------- Textos ---------*/
+
+
+  /* -- Titulo -- */
+
+  .text--big {
+    font-family:var(--titulo-font-family) ;
+    color: var(--color-primary);
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 110px;
+    margin-left: -8px;
+    text-shadow: 3px 3px 2px rgb(14, 14, 14);
+    /*rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+  }
+
+
+   /* -- Texto parrafos -- */
+
+
+  .text--normal {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: justify;
+    margin-top: 40px;
+    font-family: var(--textos-font-family);
+  }
+
+   /* -- Texto voz -- */
+
+  .text--sub {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    text-align: justify;
+    font-family: var(--textos-font-family);
+  }
+
+ /* -- Nombre difuminado -- */
+
+  .text__background {
+    font-family:var(--titulo-font-family) ;
+    position: absolute;
+    left: 4rem;
+    bottom: -60px;
+    color: rgba(0,0,0,0.05);
+    font-size: 9rem;
+    font-weight: 700;
+  }
+
+
+/*------------- Flex items-----------*/
+  
+
+  .flex__item {
+    height: 100vh;
+    color: rgba(255, 255, 255, 0.696);
+    transition: transform 0.1s linear;
+  }
+  
+  .flex__item--left {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    width: 65%;
+    transform-origin: left bottom;
+    transition: transform 0.1s linear 0.4s;
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .flex__item--right {
+    width: 35%;
+    transform-origin: right center;
+    transition: transform 0.1s linear 0s;
+    opacity: 0;
+  }
+
+  .flex--preStart .flex__item--left,
+  .flex--preStart .flex__item--right,
+  .flex--active .flex__item--left,
+  .flex--active .flex__item--right {
+      opacity: 1;
+  }
+
+
+
+  /*--------- Colores cajas de los personajes --------*/
+
+
+
+  /* --- Marcos --- */
+
+    .flex--marcos .flex__item--left {
+        background: #d15a1f;
+    }
+    .flex--marcos .flex__item--right {
+        background: #020202;
+    }
+  
+
+  /* --- Randal  ---*/
+
+    .flex--randal .flex__item--left {
+        background: #a27709;
+    }
+    .flex--randal .flex__item--right {
+        background: #020202;
+    }
+    
+  
+  /* --- Vale --- */
+  
+    .flex--vale .flex__item--left {
+        background: #791d65;
+    }
+    
+    .flex--vale .flex__item--right {
+        background: #020202;
+    }
+  
+
+  /* --- Roby ---*/
+  
+    .flex--roby .flex__item--left {
+        background: #476089;
+    }
+    
+    .flex--roby .flex__item--right {
+        background: #020202;
+    }
+  
+  
+  /* --- Victor ---*/
+  
+    .flex--victor .flex__item--left {
+        background: #8e0702;
+    }
+    
+    .flex--victor .flex__item--right {
+      background: #020202;
+    }
+
+
+  /* --- Kuren --- */
+  
+    .flex--kuren .flex__item--left {
+      background: #02798e;
+    }
+
+    .flex--kuren .flex__item--right {
+        background: #020202;
+    }
+
+
+
+/*---------- Imagenes -----------*/
+
+
+  .flex__content {
+      margin-left: 80px;
+      width: 55%;
+      opacity: 1;
+      transform: translate3d(0,0,0);
+      transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
+  }
+  
+  .personajes_img {
+      position: absolute;
+      bottom:150px;
+      right: 15%;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      max-height: 35vw;
+      border-radius: 100%;
+      opacity: 1;
+      transform: translate3d(0,0,0);
+      transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+  }
+  
+  /* Animate-START point */
+  
+  .flex__container.animate--start .flex__content {
+      transform: translate3d(0,-200%,0);
+      opacity: 0;
+  }
+  
+  .flex__container.animate--start .personajes_img {
+      transform: translate3d(-200px,0,0);
+      opacity: 0;
+  }
+  
+  /* Animate-END point */
+  
+  .flex__container.animate--end .flex__item--left {
+      transform: scaleY(0);
+  }
+  
+  .flex__container.animate--end .flex__item--right {
+      transform: scaleX(0);
+  }
+  
+  .flex__container.animate--end .flex__content {
+      transform: translate3d(0,200%,0);
+      opacity: 0;
+  }
+  
+  .flex__container.animate--end .personajes_img {
+      transform: translate3d(200px,0,0);
+      opacity: 0;
+  }
+  
+
+
+  
+  /* -------------- Footer ---------------*/
+
+
+
+  .footerPages{
+    padding: 3rem;
+    background-color: #151515;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: .8;
+    
+    img{
+      width: 15vw;
+    }
+    .redesContainer{
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+
+      .botones_pages{
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+      }
+      .iconosredes_pages{
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
+      }
+    }
+    .botones_redes{
+      display: flex;
+      align-items: center;
+      padding: .7rem 1rem;
+      border-radius: 100%;
+      font-size: 2.5rem;
+      background-color: #d15a1f;
+      color: #ffffff;
+    }
+
+  }
+  
