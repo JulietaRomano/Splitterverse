@@ -1,8 +1,16 @@
 //preloader
-window.onload = function(){
-    $('#preloader').fadeOut();
-    $('#hidden').removeClass('hidden');
-}
+// window.onload = function(){
+//     $('#preloader').fadeOut();
+//     $('#hidden').removeClass('hidden')
+// }
+
+
+
+$(document).ready(function(){
+    $('html,body').scrollTop(0);
+  });
+
+
 
 
 //navbar
@@ -72,3 +80,29 @@ var animateButton = function(e) {
   for (var i = 0; i < bubblyButtons.length; i++) {
     bubblyButtons[i].addEventListener('mouseover', animateButton, false);
   }
+
+
+
+// Personajes
+
+$('.slide-nav').on('click', function(e) {
+    e.preventDefault();
+    // get current slide
+    var current = $('.flex--active').data('slide'),
+      // get button data-slide
+      next = $(this).data('slide');
+  
+    $('.slide-nav').removeClass('active');
+    $(this).addClass('active');
+  
+    if (current === next) {
+      return false;
+    } else {
+      $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+      $('.flex--active').addClass('animate--end');
+      setTimeout(function() {
+        $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+        $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+      }, 800);
+    }
+  });
