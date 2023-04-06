@@ -361,6 +361,7 @@ background-position: center;
   *{
     font-size: 14px;
   }
+
     .slider_container {
       display: none;
     }
@@ -410,7 +411,7 @@ background-position: center;
  }
   /* ------- 590px ------*/
  
-  @media (max-width: 490px) {
+  @media (max-width: 590px) {
     *{
       font-size: 13px;
     }
@@ -421,6 +422,9 @@ background-position: center;
  @media (max-width: 490px) {
   *{
     font-size: 12px;
+  }
+  .portada-container_personajes{
+    height: 90vh;
   }
   .personajes_responsive{
     .personajes_responsive-cajas{

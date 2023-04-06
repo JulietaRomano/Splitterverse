@@ -1068,7 +1068,7 @@ p {
     padding: 5rem; } }
 
 /* ------- 590px ------*/
-@media (max-width: 490px) {
+@media (max-width: 590px) {
   * {
     font-size: 13px; } }
 
@@ -1076,6 +1076,8 @@ p {
 @media (max-width: 490px) {
   * {
     font-size: 12px; }
+  .portada-container_personajes {
+    height: 90vh; }
   .personajes_responsive .personajes_responsive-cajas {
     padding: 5rem 3rem; }
   .text--big {

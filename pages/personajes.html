@@ -19,6 +19,8 @@
         <link rel="shortcut icon" type="image/x-icon" href="./assets/sobreNosotros-bolaDeFuego.jpg">
       <!-- Font Awesome icons (free version)-->
       <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+      <!--AOS ANIMATION--> 
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <!--Bootstrap-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
       <!-- CSS-->
@@ -205,12 +207,15 @@
     </section>
 
     <!----------- Responsive -------->
+
+
+
     <section class="personajes_responsive">
       <!-- Marcos -->
       <div class="personajes_responsive-cajas">
         <h2 class="titulo">Marcos</h2>
-        <img src="../assets/personajes/marcos_personaje.jpg" alt="Marcos">
-        <p class="textos-general">
+        <img src="../assets/personajes/marcos_personaje.jpg" alt="Marcos" data-aos="fade-right">
+        <p class="textos-general" data-aos="fade-up">
           Es un artista de cómics que cree que toda su vida ha sido un cobarde. Sin embargo, al salvar inesperadamente a una chica misteriosa, es maldecido siendo separado de su alma. A partir de ese momento debe emprender una aventura junto con Randal (su alma) con el objetivo de volver a unirse, luchando contra demonios y otros seres oscuros para sobrevivir convirtiéndose en un Splitter (un guerrero espiritual).                         
         </p>
         <p class="text--sub">Actor de voz: Alejandro Graue</p>
@@ -220,8 +225,8 @@
 
       <div class="personajes_responsive-cajas">
         <h2 class="titulo">Randal</h2>
-        <img src="../assets/sobre-nosotros_randal.png" alt="Marcos">
-        <p class="textos-general">
+        <img src="../assets/sobre-nosotros_randal.png" alt="Randal" data-aos="fade-right">
+        <p class="textos-general" data-aos="fade-up">
           Es el alma gruñona y temperamental de Marcos y siempre esta motivandolo para que sea más valiente y buscar la forma de volver a unirse antes de que su reloj de energia vital llegue a cero. Es un alma que guarda un gran poder en su interior ya que es una de las 36 almas justas que existen en el mundo. Su Beast Mode tiene forma de Dragon. 
         </p>
         <p class="text--sub">Actor de voz: Alejandro Graue</p>
@@ -231,8 +236,8 @@
 
       <div class="personajes_responsive-cajas">
         <h2 class="titulo">Vale</h2>
-        <img src="../assets/personajes/vale_personaje.jpg" alt="Marcos">
-        <p class="textos-general">
+        <img src="../assets/personajes/vale_personaje.jpg" alt="Vale" data-aos="fade-right">
+        <p class="textos-general" data-aos="fade-up">
           Es una Splitter que trabaja para la OMAE (la Organizacion Mundial Anti Espectros). Es muy valiente y una gran luchadora, sin embargo, tras su coraza de chica de dura esconde grandes problemas emocionales no resueltos con su familia debido a la muerte de su madre en manos de unos vampiros pertenecientes a la Dinastia Stocker. Tiene un alma en forma de conejo llamada Nana. 
         </p>
         <p class="text--sub">Actriz de voz: Valeria Gómez</p>
@@ -242,8 +247,8 @@
 
         <div class="personajes_responsive-cajas">
           <h2 class="titulo">Roby</h2>
-          <img src="../assets/personajes/roby_personaje.jpg" alt="Marcos">
-            <p class="textos-general">
+          <img src="../assets/personajes/roby_personaje.jpg" alt="Roby" data-aos="fade-right">
+            <p class="textos-general" data-aos="fade-up">
               Es un joven vampiro “mestizo” (mitad vampiro, mitad humano) perteneciente a la Dinastia Stocker. Se dedica a coleccionar almas de Splitters, es muy orgulloso y tiene una gran rivalidad con Marcos debido a que lo derrotó inesperadamente en una batalla. Es portador de un alma muy extraña con forma de murcielago llamado Lugo.  
             </p>
             <p class="text--sub">Actor de Voz: Martín Gopar</p>
@@ -253,8 +258,8 @@
 
         <div class="personajes_responsive-cajas">
           <h2 class="titulo">Victor</h2>
-          <img src="../assets/personajes/victor_personaje.jpg" alt="Marcos">
-          <p class="textos-general">
+          <img src="../assets/personajes/victor_personaje.jpg" alt="Victor" data-aos="fade-right">
+          <p class="textos-general" data-aos="fade-up">
             Es el hermano mayor de Roby y el actual lider de la Dinastia Stocker. Es un vampiro cruel y despiadado cuyo principal objetivo es revivir a su padre, el Conde Morlock, reuniendo el poder de varias almas justas. 
           </p>
           <p class="text--sub">Actor de voz: Leandro “Leto” Dugatkin  </p>
@@ -263,9 +268,9 @@
         <!-- Kuren-->
 
         <div class="personajes_responsive-cajas">
-          <h2 class="titulo">Roby</h2>
-          <img src="../assets/personajes/kuren_personaje.jpg" alt="Marcos">
-          <p class="textos-general">
+          <h2 class="titulo">Kuren</h2>
+          <img src="../assets/personajes/kuren_personaje.jpg" alt="Kuren" data-aos="fade-right">
+          <p class="textos-general" data-aos="fade-up">
             Es un extraño hombre ermitaño con mascara de pajaro que vive en un pueblito llamado “Anima” cerca del bosque. Sin embargo, se trata de un Splitter legendario que se termina convirtiendo en el maestro de Marcos para ayudarlo a controlar los poderes de su alma. 
             Es el tio de Vale y tambien tiene un conflicto no resuelto con la Dinastia Stocker por la muerte de su hermana. Es portador de un alma justa con forma de Hipogrifo llamada Midori.                             
           </p>
@@ -294,7 +299,11 @@
 
     </footer>
 
-
+        <!--AOS SCRIPT-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+      </script>
         <!-- Bootstrap JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
            <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
