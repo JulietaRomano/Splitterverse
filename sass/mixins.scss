@@ -1,0 +1,36 @@
+ /*MIXINS*/
+
+ //Tipografia//
+ @mixin textos ($fontsize, $align){
+    font-family: var(--textos-font-family);
+    font-size: $fontsize;
+    line-height: 2rem;
+    text-align:$align;
+    max-width: 100%;
+    margin: auto;
+    color: var(--color-font);
+}
+          
+@mixin textoThambi ($fontsize, $weight) {
+    font-size: $fontsize;
+    font-weight: $weight;
+}
+@mixin SubtitulosIndex{
+    display: inline-block;
+    position: relative;
+    font-size: 2em;
+    color: #fdffff;
+    font-weight: 900;
+    border-radius: 1.5625em;
+    border-right: solid 0.1875em $celeste;
+    border-bottom: solid 0.25em $celeste;
+    padding: 0.4em 1.2em 0.4em 1.2em;
+    background-color:#7abeb9;
+
+    //MEDIA QUERIES//
+    @include smarthphone{
+        font-size: 17px;
+        margin-bottom: 1em;
+    }
+}
+ 

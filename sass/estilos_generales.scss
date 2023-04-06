@@ -37,24 +37,64 @@ p {
 }
 
 /*----- TEXTOS -----*/
+
 .h1{
-    font-size: 0px;
+  font-size: 0px;
+}
+  /* -- Titulo -- */
+
+  .text--big {
+    font-family: var(--titulo-font-family);
+    color: var(--color-primary);
+    font-size: 5rem;
+    margin-bottom:2rem ;
+    margin-left: -0.5rem;
+    text-shadow: 0.1875rem 0.1875rem 0.125rem rgb(14, 14, 14);
+    /*rgba(100, 100, 111, 0.2) 0rem 0.4375rem 1.8125rem 0rem;*/
   }
-  .titulo_seccion{
+
+  .titulo{
     font-family: var(--titulo-font-family);
     font-size: 2.7rem;
     color: var(--color-primary);
     margin-bottom: 3rem;
+    font-weight: 700;
+    line-height: 6.875rem;
     }
+
+
+   /* -- Texto parrafos -- */
+
+
+  .text--normal {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: justify;
+    margin-top: 2.5rem;
+  }
   .textos-general{
-      font-family: var(--textos-font-family);
-      font-size: 1.4rem;
-      line-height: 2rem;
-      text-align:justify;
-      max-width: 100%;
-      margin: auto;
-      color: var(--color-font);
+    font-family: var(--textos-font-family);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align:justify;
+    max-width: 100%;
+    margin: auto;
+    color: var(--color-font);
+  }
+
+   /* -- Texto voz -- */
+
+  .text--sub {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    text-align: justify;
+    font-family: var(--textos-font-family);
+    @media (max-width: 998px) {
+      margin-top: 1.5rem;
     }
+  }
+
 
   .amarillo{
       color: var(--color-primary);
@@ -160,4 +200,171 @@ p {
 
 .link_activo{
     color: yellow;
+    @media (max-width: 998px) {
+      font-size: 16px;
+    }
   }
+
+
+  /* -------------- Footer -------------*/
+
+.footerPages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0d0d;
+  padding: 3rem;
+    .footerLogo{
+    width: 18rem;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.footer_index{
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+  /*---Botones con los iconos de las redes----*/
+
+
+  .war-btn {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+  }
+
+  .war-btn button {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin: 0 2.5rem;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.2s;
+  }
+  .war-btn button:hover {
+    font-size: 3.5rem;
+    transform:scale(1.09);
+    background-color: #ff8000;
+  }
+  @keyframes pulse {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    20% {opacity: 1;}
+    100% {
+        opacity: 0;
+    }
+  }
+  .war-btn button::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: -1;
+    animation: pulse 1.5s infinite;
+    transform: scale(1.5);
+    font-size: 3rem;
+  }
+
+  .bg1,.bg1::before {background: var(--color-secundary) ;}
+  .bg3,.bg3::before {background: var(--color-secundary);}
+  .bg5,.bg5::before {background: var(--color-secundary);}
+  .me {
+    margin:1.5625rem;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .me a {
+    font-size:0.9375rem;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    background: #010101;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+  }
+  .me a:hover {
+    color: #fff;
+    background: #FFA200;
+    transition: all easy 0.3s;
+  }
+   /* ------- 1350px ------*/
+ 
+   
+   @media (max-width: 1350px) {
+    .footer_index{
+     margin-top: 1rem;
+     margin-bottom: 4rem;
+    }
+    .svg-inline--fa{
+      font-size: 3rem;
+    }
+     
+   }
+   /* ------- 1200px ------*/
+ 
+   
+ @media (max-width: 1200px) {
+   
+  .footer_index{
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  }
+  
+}
+
+/* ------- 991px ------*/
+
+
+@media (max-width: 991px) {
+   
+  .footer_index{
+  margin-top: 2rem;
+  }
+}
+
+ /* ------- 850px ------*/
+ 
+   
+ @media (max-width: 850px) {
+   
+  // *{
+  //   font-size: 12px;
+  // }
+  .botones_pages{
+    margin-top: 3rem;
+  }
+  .footerPages {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+/* ------- 300px ------*/
+
+
+@media (max-width: 300px) {
+   
+  .footer_index{
+    flex-wrap: nowrap;
+  }
+}
+

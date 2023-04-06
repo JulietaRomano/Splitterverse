@@ -1,0 +1,137 @@
+
+/* ---------------------------- Media queries -------------------------- */
+
+
+// /* ------- 1350 ------ */
+
+// @media (max-width: 1350px) {
+//     /*REDES*/
+//     .redes-img-bg{
+//      margin-top: 0rem;
+//      background: #000;
+//      height: 30vh;
+//    }
+//    .section-redes{
+//      margin-top: 4rem;
+//    }
+ 
+//    .caja_redes{
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//      flex-direction: column;
+//      width: 100%;
+//      padding-top: 2rem;
+//    } 
+//    .redes-img_rsp{
+//      margin-top: 6rem;
+//      height:68%;
+//      display: block;
+//    }
+//    .redes-img_rsp img{
+//      height: 100%;
+//      width: 100%;
+//    }
+//    .svg-inline--fa{
+//      font-size: 3rem;
+//    }
+//    /*BOTONES Redes*/
+ 
+//    .war-btn{
+//      margin-top: 1rem;
+//      margin-bottom: 4rem;
+//    }
+//    .botones{
+//      margin:3rem 0rem 3rem 0rem;
+//    }
+//  }
+ 
+ 
+   /* ------- 1200 ------ */
+ 
+ @media (max-width: 1200px) {
+ 
+   *{
+     font-size: 14px;
+   }
+ }
+ 
+ /* ------- 991px ------*/
+   
+ @media (max-width: 991px) {
+ 
+   *{
+     font-size: 13px;
+   }
+   .fixed-top{
+    position: unset;
+  }
+  .nav-item{
+         padding: 1rem;
+         border-bottom: solid rgb(13, 13, 13)
+       }
+       .textos-general{
+         font-size: 1.4rem;
+       }
+       .nav-link{
+       color: var(--color-font);
+       font-size: 16px;
+       padding-top: 1.5rem;
+       }
+       .nav-link:hover{
+         color: var(--color-primary);
+         }
+ }
+ 
+ 
+ /* ------- 850px ------*/
+ 
+   
+ @media (max-width: 850px) {
+   
+   *{
+     font-size: 12px;
+   }
+   
+ }
+ 
+ /* ------- 490px ------*/
+ 
+ @media (max-width: 490px) {
+   *{
+     font-size: 11px;
+   }
+ }
+   
+ /* ------- 420px ------*/
+     
+   
+ @media (max-width: 420px) {
+    
+   *{
+     font-size: 9px;
+   }
+  
+ }
+ /* ------- 350px ------*/
+ 
+ @media (max-width: 350px) {
+   
+   *{
+     font-size: 9px;
+   }
+ 
+ }
+   
+ /* ------- 300px ------*/
+ @media (max-width: 300px) {
+   *{
+     font-size: 8px;
+   }
+   
+ }
+ 
+
+
+
+
