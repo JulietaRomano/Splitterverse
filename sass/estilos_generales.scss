@@ -72,7 +72,7 @@ p {
     text-align: justify;
     margin-top: 2.5rem;
   }
-  .textos-general{
+.textos-general{
     font-family: var(--textos-font-family);
     font-size: 1.4rem;
     line-height: 2rem;
@@ -80,7 +80,30 @@ p {
     max-width: 100%;
     margin: auto;
     color: var(--color-font);
-  }
+    /* ------- 991px ------*/
+   
+    @media (max-width: 991px) {
+      font-size: 1.4rem;
+    }
+    /* ------- 850px ------*/
+    @media (max-width: 850px) {
+      font-size: 1.6rem;
+    }
+    /* ------- 490px ------*/
+    @media (max-width: 850px) {
+      font-size: 16px;
+    }
+      /* ------- 420px ------*/
+    @media (max-width: 420px) {
+        font-size: 15px;
+    }
+    /* ------- 350px ------*/
+ 
+    @media (max-width: 350px) {
+      font-size: 13px;
+    }
+
+}
 
    /* -- Texto voz -- */
 
@@ -98,11 +121,15 @@ p {
 
   .amarillo{
       color: var(--color-primary);
-      font-size: 1.4rem;
   }
 /* ------------ MENU ----------*/
 .logo img{
   width: 12rem;
+
+  /* ------- 991px ------*/
+  @media (max-width: 991px) {
+    width: 14rem;
+  }
 }
 
 
@@ -110,12 +137,13 @@ p {
   #mainNav {
     min-height: 3.5rem;
     background-color: #000000;
-    color: red;
     padding: 0rem 2rem 0rem 2rem;
+    /* ------- 991px ------*/
+    @media (max-width: 991px) {
+      padding: 0rem;
+    }
   }
-  #mainNav:hover{
-    background-color: black;
-  }
+ 
   /*Menu hamburguesa*/
   #mainNav .navbar-toggler {
     font-size: 80%;
@@ -180,7 +208,7 @@ p {
       border-bottom: 0.25rem solid transparent;
     }
     #mainNav .nav-link:hover {
-        color: var(--color-primary);
+      color: white;
     }
     #mainNav.navbar-shrink .nav-link:hover {
         color: var(--color-primary);
@@ -194,7 +222,22 @@ p {
       border-bottom: 0.25rem solid var(--color-primary);
     }
   }
-
+    @media (max-width: 991px) {
+  
+    .nav-item{
+        padding: 1rem;
+        border-bottom: solid rgb(13, 13, 13)
+      }
+      
+      .nav-link{
+      color: var(--color-font);
+      font-size: 16px;
+      padding-top: 1.5rem;
+      }
+      .nav-link:hover{
+        color: var(--color-primary);
+        }
+   }
 
 /*Link queda activo dependiendo de la pagina donde se encuentre*/
 
@@ -329,6 +372,7 @@ p {
   margin-bottom: 4rem;
   }
   
+  
 }
 
 /* ------- 991px ------*/
@@ -346,9 +390,6 @@ p {
    
  @media (max-width: 850px) {
    
-  // *{
-  //   font-size: 12px;
-  // }
   .botones_pages{
     margin-top: 3rem;
   }
