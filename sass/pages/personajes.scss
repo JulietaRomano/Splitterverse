@@ -417,7 +417,7 @@ animation-fill-mode: forwards;
     .portada_personajes{
       height: 100vh;
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.415) 75%, #000 100%),url(../assets/personajes_responsive.jpeg);
-   animation: background-move 5s  linear alternate;
+   animation: none;
      
       background-size: cover;
       background-position: center;
