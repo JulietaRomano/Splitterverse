@@ -119,6 +119,8 @@ p {
   background-color: #000000;
   padding: 0rem 2rem 0rem 2rem;
   /* ------- 991px ------*/ }
+  #mainNav:hover {
+    background-color: #000000; }
   @media (max-width: 991px) {
     #mainNav {
       padding: 0rem; } }
@@ -201,7 +203,8 @@ p {
 
 /*Link queda activo dependiendo de la pagina donde se encuentre*/
 .link_activo {
-  color: yellow; }
+  color: yellow;
+  font-size: 1.3rem; }
   @media (max-width: 998px) {
     .link_activo {
       font-size: 16px; } }
@@ -809,11 +812,24 @@ p {
  
  }*/
 /*---- Personajes seccion ------*/
-.portada-container_personajes {
+.portada_personajes {
   height: 100vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.415) 75%, #000 100%), url(../assets/portada_personajes.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.415) 75%, #000 100%), url(../assets/portada_personajes.png);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  -webkit-animation: slidein 5s;
+  animation: slidein 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate; }
+
+@keyframes slidein {
+  from {
+    background-position: -100px 0px;
+    background-size: 2750px; }
+  to {
+    background-position: top;
+    background-size: 1800px; } }
 
 /*--------------- Slider de personajes-------------------*/
 .slider_container {
@@ -1042,8 +1058,6 @@ p {
 
 /* ------- 1346 ------ */
 @media (max-width: 1346px) {
-  * {
-    font-size: 15.5px; }
   /*  --- Silder --- */
   .slider_container {
     min-height: 82vh; }
@@ -1057,8 +1071,6 @@ p {
 
 /* ------- 1100 ------ */
 @media (max-width: 1346px) {
-  * {
-    font-size: 14px; }
   /*img slider*/
   .personajes_img {
     bottom: 13.375rem; }
@@ -1068,8 +1080,6 @@ p {
 
 /* ------- 998 ------ */
 @media (max-width: 998px) {
-  * {
-    font-size: 14px; }
   .slider_container {
     display: none; }
   /*Personajes*/
@@ -1095,27 +1105,31 @@ p {
 
 /* ------- 850px ------*/
 @media (max-width: 850px) {
-  /*SINOPSIS*/
-  * {
-    font-size: 13px; }
   .personajes_responsive .personajes_responsive-cajas {
     padding: 5rem; } }
 
-/* ------- 590px ------*/
-@media (max-width: 590px) {
-  * {
-    font-size: 13px; } }
+/* ------- 690px ------*/
+@media (max-width: 690px) {
+  .portada_personajes {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.415) 75%, #000 100%), url(../assets/personajes_responsive.jpeg);
+    animation: background-move 5s  linear alternate;
+    background-size: cover;
+    background-position: center; } }
 
 /* ------- 490px ------*/
 @media (max-width: 490px) {
-  * {
-    font-size: 12px; }
-  .portada-container_personajes {
+  .portada_personajes {
     height: 90vh; }
   .personajes_responsive .personajes_responsive-cajas {
     padding: 5rem 3rem; }
   .text--big {
     font-size: 4rem; } }
+
+/* ------- 390px ------*/
+@media (max-width: 390px) {
+  .portada_personajes {
+    height: 80vh; } }
 
 /* ---------------------------- Media queries -------------------------- */
 /* ------- 1200 ------ */
