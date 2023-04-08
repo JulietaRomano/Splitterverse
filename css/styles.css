@@ -56,16 +56,9 @@ p {
   line-height: 6.875rem; }
 
 /* -- Texto parrafos -- */
-.text--normal {
-  font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.9);
-  text-align: justify;
-  margin-top: 2.5rem; }
-
 .textos-general {
   font-family: var(--textos-font-family);
   font-size: 1.4rem;
-  line-height: 2rem;
   text-align: justify;
   max-width: 100%;
   margin: auto;
@@ -86,7 +79,7 @@ p {
       font-size: 16px; } }
   @media (max-width: 420px) {
     .textos-general {
-      font-size: 15px; } }
+      font-size: 16px; } }
   @media (max-width: 350px) {
     .textos-general {
       font-size: 13px; } }
@@ -963,7 +956,7 @@ p {
   background: #d15a1f; }
 
 .flex--marcos .flex__item--right {
-  background: #271d18; }
+  background: #000000; }
 
 /* --- Randal  ---*/
 .flex--randal .flex__item--left {
@@ -1120,7 +1113,7 @@ p {
 /* ------- 490px ------*/
 @media (max-width: 490px) {
   .portada_personajes {
-    height: 90vh; }
+    height: 80vh; }
   .personajes_responsive .personajes_responsive-cajas {
     padding: 5rem 3rem; }
   .text--big {

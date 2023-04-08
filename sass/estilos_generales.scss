@@ -66,16 +66,10 @@ p {
    /* -- Texto parrafos -- */
 
 
-  .text--normal {
-    font-size: 1.25rem;
-    color: rgba(255, 255, 255, 0.9);
-    text-align: justify;
-    margin-top: 2.5rem;
-  }
+
 .textos-general{
     font-family: var(--textos-font-family);
     font-size: 1.4rem;
-    line-height: 2rem;
     text-align:justify;
     max-width: 100%;
     margin: auto;
@@ -95,7 +89,7 @@ p {
     }
       /* ------- 420px ------*/
     @media (max-width: 420px) {
-        font-size: 15px;
+        font-size: 16px;
     }
     /* ------- 350px ------*/
  
