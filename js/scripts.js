@@ -1,16 +1,7 @@
-//preloader
-// window.onload = function(){
-//     $('#preloader').fadeOut();
-//     $('#hidden').removeClass('hidden')
-// }
-
-
 
 $(document).ready(function(){
     $('html,body').scrollTop(0);
   });
-
-
 
 
 //navbar
@@ -114,79 +105,3 @@ console.log('next '+next)
     }, 800);
   }
 });
-
-
-
-// let current_posicion= 1
-// let a_time = Date.now();
-
-//   window.addEventListener("wheel", event => {
-//     let b_time = Date.now();
-//     let difference = b_time-a_time
-
-//     //Cuando bajo!!
-//     if ((0<event.deltaY) &&(difference>1400)&& current_posicion<5){
-//       console.log(event.deltaY)
-//       console.log("baje")
-//       current_posicion =  current_posicion + 1
-//       console.log("Estaria en la posicion " + current_posicion)
-//       a_time = Date.now();
-      
-      
-//       let active = $(document.getElementsByClassName('active')[0]).data('slide');
-//       console.log("active cuando bajo:" + active);
-//         // e.preventDefault();
-//         // get current slide
-//         let aux = document.getElementsByClassName('slide-nav')[active];
-
-//         var current = current_posicion,
-//           // get button data-slide
-//         next = $(aux).data('slide');
-//         console.log("next:" + next);
-//         $('.slide-nav').removeClass('active');
-//         $(aux).addClass('active');
-      
-//         if (current === next + 1) {
-//           return false;
-//         } else {
-//           $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
-//           $('.flex--active').addClass('animate--end');
-//           setTimeout(function() {
-//             $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
-//             $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
-//           }, 800);
-//         }
-//     }
-
-//       //Cuando subo!!
-//       if ((0>event.deltaY) &&(difference>1400)&& current_posicion>1){
-//       console.log("subi")
-//       current_posicion =  current_posicion - 1
-//       console.log("Estaria en la posicion " + current_posicion)
-//       a_time = Date.now();
-//       let active = $(document.getElementsByClassName('active')[0]).data('slide');
-//       let g = $(document.getElementsByClassName('active'));
-//       console.log(g);
-//       console.log("active cuando subo:" + active);
-//       let aux = document.getElementsByClassName('slide-nav')[active-2];
-//       var current = current_posicion,
-//         // get button data-slide
-//       next = $(aux).data('slide');
-//       console.log("next:" + next);
-//       $('.slide-nav').removeClass('active');
-//       $(aux).addClass('active');
-    
-//       if (current === next + 1) {
-//         return false;
-//       } else {
-//         $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
-//         $('.flex--active').addClass('animate--end');
-//         setTimeout(function() {
-//           $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
-//           $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
-//         }, 800);
-//       }
-
-//     }
-    
-//   });

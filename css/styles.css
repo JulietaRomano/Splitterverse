@@ -827,7 +827,8 @@ p {
 /*--------------- Slider de personajes-------------------*/
 .slider_container {
   position: relative;
-  min-height: 100vh; }
+  min-height: 100vh;
+  margin-top: 3rem; }
 
 /*- Botones con personajes para mover slider -*/
 .slider_botones {
