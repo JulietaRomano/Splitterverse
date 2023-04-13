@@ -69,11 +69,15 @@ p {
   max-width: 100%;
   margin: auto;
   color: var(--color-font);
+  /* ------- 1110px ------*/
   /* ------- 991px ------*/
   /* ------- 850px ------*/
   /* ------- 490px ------*/
   /* ------- 420px ------*/
   /* ------- 350px ------*/ }
+  @media (max-width: 1345px) {
+    .textos-general {
+      font-size: 1.2rem; } }
   @media (max-width: 991px) {
     .textos-general {
       font-size: 1.4rem; } }
@@ -1108,7 +1112,7 @@ p {
     bottom: 10.375rem; } }
 
 /* ------- 1100 ------ */
-@media (max-width: 1346px) {
+@media (max-width: 1120px) {
   /*img slider*/
   .personajes_img {
     bottom: 13.375rem; }
