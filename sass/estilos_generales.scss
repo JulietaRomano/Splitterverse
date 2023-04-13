@@ -61,7 +61,12 @@ p {
     font-weight: 700;
     line-height: 6.875rem;
     }
-
+    .titulo_personajes{
+      font-family: var(--titulo-font-family);
+    font-size: 5rem;
+    color: var(--color-primary);
+    text-shadow: 3px 4px 8px #000000;
+    }
 
    /* -- Texto parrafos -- */
 
