@@ -1,7 +1,6 @@
   /* ----------------------- PAGINA 404 --------------------------*/
   .notfound{
     height: 100vh;
-    background-color: var(--color-background);
   }
   .notfound_logo {
     padding-left: 2rem;
@@ -55,4 +54,210 @@
     width: 100%;
   }
   
+  
+  
+    /* ---------------------------- Media queries -------------------------- */
+    
+  
+    /* ------- 1200 ------ */
+  
+  @media (max-width: 1200px) {
+  
+
+  
+    /*BOTONES Redes*/
+  
+    .war-btn{
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+    }
+    .botones{
+      margin:3rem 0rem 3rem 0rem;
+    }
+  
+    /*404*/
+  
+    .notfound_img{
+      width: 56%;
+      height: 85%;
+      }
+  
+    .notfound_Caja{
+      text-align: center;
+    }
+  
+  }
+  
+  /* ------- 1000px ------*/
+    
+  @media (max-width: 1000px) {
+
+    
+     /*Redes*/
+    .war-btn{
+        margin-top: 2rem;
+    }  
+     /*404*/
+     .notfound_Caja{
+      width: 80%;
+    }
+    
+    .notfound_container{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .notfound_container img{
+      width: 100%;
+      height: 100%;
+    }
+    .notfound_img{
+      width: 50%;
+      height: 50%;
+      }
+  }
+  
+  
+  /* ------- 850px ------*/
+  
+    
+  @media (max-width: 850px) {
+    
+
+       /*404*/
+    
+      .notfound_container img{
+        width: 100%;
+        height: 100%;
+      }
+      .notfound_img{
+        width: 60%;
+        height: 40%;
+        }
+    
+  }
+  
+  
+  /* ------- 490px ------*/
+  
+  @media (max-width: 490px) {
+
+         /*404*/
+    
+         .notfound_container img{
+          width: 100%;
+          height: 100%;
+        }
+        .notfound_img{
+          width: 70%;
+          height: 40%;
+          }
+          
+  }
+    
+  /* ------- 420px ------*/
+      
+    
+  @media (max-width: 420px) {
+     
+  
+  
+    /*Botones*/
+    .boton_a{
+      width: 45%;
+    }
+    .bubbly-button{
+      font-size: 15px;
+      padding: .8em;
+    }
+    .redes-img-bg {
+      height: 13vh;
+    }
+    .redes-img-bg {
+      height: 20vh;
+    }
+   /*404*/
+    
+  .notfound_img{
+    width: 80%;
+    height: 40%;
+    }
+    .bton_404{
+      font-size: 13px;
+  padding: 1em;
+  width: 100%;
+    }
+  }
+  /* ------- 350px ------*/
+  
+  @media (max-width: 350px) {
+    
+
+  
+    /*Botones*/
+    .nuevo_boton {
+      flex-wrap: wrap;
+    }
+    .bubbly-button{
+      font-size: 13px;
+      padding: .7em;
+    }
+    .redes-img-bg {
+      height: 13vh;
+    }
+    .bton_404{
+      font-size: 13px;
+  padding: 1em;
+  width: 100%;
+    }
+  
+     /*404*/
+  
+    .notfound_container{
+      height: 70vh;
+    }
+  
+    .notfound_Caja h1{
+      margin-bottom: 1.3rem;
+    }
+    .notfound_Caja h2{
+      margin-bottom: 2rem;
+    }
+    .notfound_Caja p{
+      margin-bottom: 2rem;
+    }
+    
+  .notfound_img{
+    width: 80%;
+    height: 30%;
+    }
+  
+  }
+    
+  /* ------- 300px ------*/
+  @media (max-width: 300px) {
+
+    .nuevo_boton {
+      flex-wrap: wrap;
+      align-items:center;
+      justify-content: center;
+      height: 150px;
+      padding: 0rem;
+    }
+    .boton_a{
+      width: 150px;
+    }
+    .bubbly-button{
+      font-size: 13px;
+      padding: .7em;
+      
+    }
+    .redes-img-bg {
+      height: 16vh;
+    }
+    .war-btn {
+      flex-wrap: nowrap;
+    }
+    
+  }
   
