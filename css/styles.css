@@ -33,6 +33,7 @@ p {
   --color-font: rgb(232, 232, 232);
   --color-background:black; }
 
+/*----- Preloader -----*/
 /*----- TEXTOS -----*/
 .h1 {
   font-size: 0px; }
@@ -339,6 +340,7 @@ p {
   .footer_index {
     flex-wrap: nowrap; } }
 
+/*Spinner*/
 /* -------------- Portada --------------- */
 .portada-container {
   height: 100vh;
@@ -1180,6 +1182,20 @@ p {
 @media (max-width: 390px) {
   .portada_personajes {
     height: 80vh; } }
+
+.especiales_art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 68px; }
+  .especiales_art img {
+    width: 450px; }
+  .especiales_art .especiales_texto {
+    margin-left: 68px; }
+  .especiales_art .boton_especial {
+    width: 250px;
+    margin: auto;
+    margin-top: 3rem; }
 
 /* ----------------------- PAGINA 404 --------------------------*/
 .notfound {

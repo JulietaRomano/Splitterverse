@@ -1,0 +1,17 @@
+.especiales_art{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 68px;
+    img{
+        width: 450px;
+    }
+    .especiales_texto{
+        margin-left: 68px;
+    }
+    .boton_especial{
+        width: 250px;
+        margin: auto;
+        margin-top: 3rem;
+    }
+}
