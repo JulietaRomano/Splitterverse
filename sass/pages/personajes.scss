@@ -1,11 +1,14 @@
 /*---- Personajes seccion ------*/
-
+.textos-personajes{
+ font-size: 1.3rem;
+ color: white;
+}
  .portada_personajes{
  height: 100vh;
  width: 100vw;
  overflow: hidden;
   .portada_personajes-img{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.415) 75%, #000 100%),url(../assets/portada_personajes.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.415) 75%, #000 100%),url(../assets/portadas/portada_personajes.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -128,7 +131,7 @@
     background-size: contain;
   }
   .slider__navi a:nth-child(2){
-    background-image: url(../assets/sobre-nosotros_randal.png);
+    background-image: url(../assets/home/sobre-nosotros_randal.png);
   }
   .slider__navi a:nth-child(3){
     background-image: url(../assets/personajes/vale_personaje.jpg);
@@ -142,6 +145,10 @@
   .slider__navi a:nth-child(6){
     background-image: url(../assets/personajes/kuren_personaje.jpg);
   }
+  .slider__navi a:nth-child(7){
+    background-image: url(../assets/personajes/chicaParaguas_personaje.jpg);
+  }
+ 
   .slider__navi a.active {
   border: solid rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.56) 0rem 1.375rem 4.375rem 0.25rem;
@@ -306,6 +313,16 @@
     }
 
 
+      /* --- NUEVO --- */
+  
+      .flex--nuevo .flex__item--left {
+        background: #e10b1d;
+      }
+  
+      .flex--nuevo .flex__item--right {
+          background: #020202;
+      }
+
 
 /*---------- Imagenes -----------*/
 
@@ -416,7 +433,9 @@
 /* ------- 1100 ------ */
 
 @media (max-width: 1120px) {
-
+  .textos-personajes{
+    font-size: 1.2rem;
+   }
     /*img slider*/
     .personajes_img {
       bottom: 13.375rem;
@@ -430,7 +449,10 @@
 /* ------- 998 ------ */
 
 @media (max-width: 998px) {
-
+  .textos-personajes{
+    font-size: 1.5rem;
+    text-align: center;
+   }
     .slider_container {
       display: none;
     }

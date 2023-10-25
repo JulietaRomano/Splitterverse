@@ -87,14 +87,11 @@ $('.slide-nav').on('click', function(e) {
 
   $('.slide-nav').removeClass('active');
   $(this).addClass('active');
-  console.log(this);
-console.log('current '+ current);
-console.log('next '+next)
+  
 
   if (current === next) {
     return false;
   } else {
-
     $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
     $('.flex--active').addClass('animate--end');
 

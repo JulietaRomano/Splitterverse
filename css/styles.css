@@ -21,8 +21,7 @@ body {
   background-color: var(--color-background);
   font-family: var(--textos-font-family); }
 
-h1,
-p {
+h1 {
   text-align: center; }
 
 :root {
@@ -42,7 +41,7 @@ p {
 .text--big {
   font-family: var(--titulo-font-family);
   color: var(--color-primary);
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
   margin-left: -0.5rem;
   text-shadow: 0.1875rem 0.1875rem 0.125rem #0e0e0e;
@@ -66,7 +65,7 @@ p {
 .textos-general {
   font-family: var(--textos-font-family);
   font-size: 1.4rem;
-  text-align: justify;
+  text-align: start;
   max-width: 100%;
   margin: auto;
   color: var(--color-font);
@@ -352,7 +351,7 @@ p {
     .portada-container {
       height: 84vh; } }
   .portada-container .portada-img {
-    background: url(../assets/portada.jpg);
+    background: url(../assets/portadas/portada_home.jpg);
     background-size: cover;
     animation: background-move 5s  linear alternate;
     height: 100vh;
@@ -365,7 +364,7 @@ p {
         height: 90vh; } }
     @media (max-width: 850px) {
       .portada-container .portada-img {
-        background: url(../assets/portada_responsive.jpg);
+        background: url(../assets/portadas/portada_home_responsive.jpg);
         background-size: cover;
         background-position: center;
         animation: background-move 5s  linear alternate;
@@ -640,13 +639,17 @@ p {
   margin-top: 4rem;
   /* ------- 1200 ------*/
   /*imagen responsive de redes (se oculta en desktop, se activa en responsive)*/ }
+  .section-redes .redes_mail {
+    color: white;
+    text-align: center;
+    margin: .5rem; }
   @media (max-width: 1200px) {
     .section-redes {
       margin-top: 4rem; } }
   .section-redes .redes-img-bg {
     height: 100vh;
     margin-top: 4rem;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.154) 0%, rgba(0, 0, 0, 0.035) 75%, #000000e4 100%), url(../assets/redes-img.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.154) 0%, rgba(0, 0, 0, 0.035) 75%, #000000e4 100%), url(../../assets/home/redes-img.jpg);
     background-size: cover;
     display: flex;
     justify-content: end;
@@ -820,12 +823,16 @@ p {
  
  }*/
 /*---- Personajes seccion ------*/
+.textos-personajes {
+  font-size: 1.3rem;
+  color: white; }
+
 .portada_personajes {
   height: 100vh;
   width: 100vw;
   overflow: hidden; }
   .portada_personajes .portada_personajes-img {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.415) 75%, #000 100%), url(../assets/portada_personajes.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.415) 75%, #000 100%), url(../assets/portadas/portada_personajes.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -915,7 +922,7 @@ p {
   background-size: contain; }
 
 .slider__navi a:nth-child(2) {
-  background-image: url(../assets/sobre-nosotros_randal.png); }
+  background-image: url(../assets/home/sobre-nosotros_randal.png); }
 
 .slider__navi a:nth-child(3) {
   background-image: url(../assets/personajes/vale_personaje.jpg); }
@@ -928,6 +935,9 @@ p {
 
 .slider__navi a:nth-child(6) {
   background-image: url(../assets/personajes/kuren_personaje.jpg); }
+
+.slider__navi a:nth-child(7) {
+  background-image: url(../assets/personajes/chicaParaguas_personaje.jpg); }
 
 .slider__navi a.active {
   border: solid white;
@@ -1047,6 +1057,13 @@ p {
 .flex--kuren .flex__item--right {
   background: #020202; }
 
+/* --- NUEVO --- */
+.flex--nuevo .flex__item--left {
+  background: #e10b1d; }
+
+.flex--nuevo .flex__item--right {
+  background: #020202; }
+
 /*---------- Imagenes -----------*/
 .flex__content {
   margin-left: 5rem;
@@ -1118,6 +1135,8 @@ p {
 
 /* ------- 1100 ------ */
 @media (max-width: 1120px) {
+  .textos-personajes {
+    font-size: 1.2rem; }
   /*img slider*/
   .personajes_img {
     bottom: 13.375rem; }
@@ -1127,6 +1146,9 @@ p {
 
 /* ------- 998 ------ */
 @media (max-width: 998px) {
+  .textos-personajes {
+    font-size: 1.5rem;
+    text-align: center; }
   .slider_container {
     display: none; }
   /*Personajes*/
@@ -1183,19 +1205,211 @@ p {
   .portada_personajes {
     height: 80vh; } }
 
-.especiales_art {
+.portada_especiales {
+  height: 350px;
+  width: 1440px;
+  background-image: url(../../assets/especiales/especiales_halloween.jpg);
+  background-size: cover;
+  background-position: 0px -550px; }
+
+.texto_especiales {
+  font-size: 1.2rem; }
+
+.especiales_section {
+  padding: 4.5rem;
+  background-image: url(../../assets/desenfocada/image1.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.especiales_article {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.466);
+  margin-bottom: 4rem; }
+  .especiales_article .especiales_img {
+    border-radius: 16px;
+    padding: 2rem;
+    color: #c1c1c1;
+    background-color: rgba(0, 0, 0, 0.868);
+    width: 35%; }
+    .especiales_article .especiales_img img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      margin-bottom: 2rem; }
+    .especiales_article .especiales_img .especiales_textos-fichaTecnica {
+      list-style: none;
+      font-size: 16px;
+      padding: 0; }
+      .especiales_article .especiales_img .especiales_textos-fichaTecnica .especiales_textos-fichaTitulo {
+        font-weight: 800;
+        color: #cccccc; }
+      .especiales_article .especiales_img .especiales_textos-fichaTecnica .especiales_textos-fichaSpan {
+        font-weight: 800;
+        color: #cccccc; }
+  .especiales_article .especiales_article-text {
+    padding: 4rem;
+    background-color: rgba(0, 0, 0, 0.868);
+    width: 62%;
+    border-radius: 16px; }
+    .especiales_article .especiales_article-text .h2_especiales {
+      font-family: Made soulmaze;
+      color: #fffd51;
+      font-size: 2.5rem;
+      margin-bottom: 4rem; }
+    .especiales_article .especiales_article-text .especiales_textos .especiales_textos-sinopsis {
+      color: white;
+      margin-bottom: 2rem; }
+      .especiales_article .especiales_article-text .especiales_textos .especiales_textos-sinopsis p {
+        text-align: left; }
+
+.especiales_img-responsive {
+  border-radius: 16px;
+  padding: 2rem;
+  color: #c1c1c1;
+  background-color: rgba(0, 0, 0, 0.868);
+  width: 100%;
+  display: none; }
+  .especiales_img-responsive img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 2rem; }
+
+/* ---------------------------- Media queries -------------------------- */
+/* ------- 1100 ------ */
+/* ------- 998 ------ */
+@media (max-width: 998px) {
+  .especiales_article {
+    flex-direction: column;
+    align-items: center; }
+  .especiales_article .especiales_article-text {
+    width: 100%; }
+  .especiales_img {
+    display: none; } }
+
+/* ------- 850px ------*/
+/* ------- 690px ------*/
+@media (max-width: 690px) {
+  .especiales_article .especiales_article-text {
+    padding: 2rem; } }
+
+/* ------- 490px ------*/
+@media (max-width: 490px) {
+  .especiales_article {
+    padding: 0rem; }
+  .especiales_section {
+    padding: 2rem; } }
+
+/* ------- 390px ------*/
+.capitulos_portada {
+  height: 20vh;
+  background-color: rgba(134, 132, 132, 0.519);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.fondo_prueba {
+  background-image: url(../../assets/desenfocada/image1.jpg);
+  background-size: cover; }
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.655);
+  padding: 1rem; }
+  .container .descripcion_cap {
+    background-color: rgba(255, 255, 255, 0.938);
+    width: 25rem;
+    border-radius: 4px;
+    padding: 2.5rem;
+    height: 750px; }
+    .container .descripcion_cap img {
+      width: 20rem;
+      margin-bottom: 3rem; }
+    .container .descripcion_cap p {
+      text-align: left; }
+
+.titulo_card-cap {
+  color: #262626;
+  font-size: 25px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 4px; }
+
+.small {
+  font-size: 17px;
+  line-height: 20px;
+  color: #666666;
+  text-align: none; }
+
+.go-corner {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 68px; }
-  .especiales_art img {
-    width: 450px; }
-  .especiales_art .especiales_texto {
-    margin-left: 68px; }
-  .especiales_art .boton_especial {
-    width: 250px;
-    margin: auto;
-    margin-top: 3rem; }
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #ff6000;
+  border-radius: 0 4px 0 32px; }
+
+.go-arrow {
+  margin-top: -6px;
+  margin-right: 5px;
+  color: white;
+  font-family: courier, sans; }
+
+.cardiflex {
+  display: flex; }
+
+.card1 {
+  display: block;
+  position: relative;
+  max-width: 800px;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 22px 14px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden; }
+  .card1 img {
+    width: 10rem;
+    height: 10rem; }
+  .card1 .card1_text {
+    margin-left: 2rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    right: -10px;
+    background: #ff6000;
+    height: 65px;
+    width: 65px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out; }
+  .card1:hover:before {
+    transform: scale(25); }
+
+.card1:hover .small {
+  transition: all 0.3s ease-out;
+  color: rgba(255, 255, 255, 0.8); }
+
+.card1:hover .titulo_card-cap {
+  transition: all 0.3s ease-out;
+  color: #ffffff; }
 
 /* ----------------------- PAGINA 404 --------------------------*/
 .notfound {

@@ -23,8 +23,7 @@ background-color: var(--color-background);
 font-family: var(--textos-font-family);
 }
 
-h1,
-p {
+h1 {
   text-align: center;
 }
 :root{
@@ -50,7 +49,7 @@ p {
   .text--big {
     font-family: var(--titulo-font-family);
     color: var(--color-primary);
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom:2rem ;
     margin-left: -0.5rem;
     text-shadow: 0.1875rem 0.1875rem 0.125rem rgb(14, 14, 14);
@@ -79,7 +78,7 @@ p {
 .textos-general{
     font-family: var(--textos-font-family);
     font-size: 1.4rem;
-    text-align:justify;
+    text-align:start;
     max-width: 100%;
     margin: auto;
     color: var(--color-font);

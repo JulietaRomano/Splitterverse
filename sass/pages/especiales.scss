@@ -1,17 +1,174 @@
-.especiales_art{
+// .especiales_art{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 68px;
+//     img{
+//         width: 450px;
+//     }
+//     .especiales_texto{
+//         margin-left: 68px;
+//     }
+//     .boton_especial{
+//         width: 250px;
+//         margin: auto;
+//         margin-top: 3rem;
+//     }
+// }
+
+
+.portada_especiales{
+    height: 350px;
+    width: 1440px;
+    background-image: url(../../assets/especiales/especiales_halloween.jpg);
+    background-size: cover;
+    background-position:0px -550px;
+    
+    
+}
+.texto_especiales{
+    font-size: 1.2rem;
+}
+.especiales_section{
+    padding: 4.5rem;
+    background-image: url(../../assets/desenfocada/image1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.especiales_article{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 68px;
-    img{
-        width: 450px;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.466);
+    margin-bottom: 4rem;
+    .especiales_img{
+        border-radius: 16px;
+        padding: 2rem;
+        color: rgb(193, 193, 193);
+        background-color: rgba(0, 0, 0, 0.868);
+        width: 35%;
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+        }
+        .especiales_textos-fichaTecnica{
+            list-style: none;
+            font-size: 16px;
+            padding: 0;
+            .especiales_textos-fichaTitulo{
+                font-weight: 800;
+                
+                color: rgb(204, 204, 204);
+            }
+            .especiales_textos-fichaSpan{
+                font-weight: 800;
+                color: rgb(204, 204, 204);
+            }
+        }
     }
-    .especiales_texto{
-        margin-left: 68px;
-    }
-    .boton_especial{
-        width: 250px;
-        margin: auto;
-        margin-top: 3rem;
+    .especiales_article-text{
+        padding: 4rem;
+        background-color: rgba(0, 0, 0, 0.868);
+        width: 62%;
+        border-radius: 16px;
+
+        .h2_especiales{
+            font-family: Made soulmaze;
+            color: #fffd51;
+            font-size: 2.5rem;
+            margin-bottom: 4rem;
+        }
+        .especiales_textos{
+            
+
+            .especiales_textos-sinopsis{
+                color: white;
+                margin-bottom: 2rem;
+                p{
+                    text-align: left;
+                }
+            }
+        }
     }
 }
+
+.especiales_img-responsive{
+    border-radius: 16px;
+    padding: 2rem;
+    color: rgb(193, 193, 193);
+    background-color: rgba(0, 0, 0, 0.868);
+    width: 100%;
+    display: none;
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        margin-bottom: 2rem;
+    }
+}
+
+  /* ---------------------------- Media queries -------------------------- */
+
+  /* ------- 1100 ------ */
+  
+  @media (max-width: 1120px) {
+
+  }
+  
+  /* ------- 998 ------ */
+  
+  @media (max-width: 998px) {
+    .especiales_article{
+        flex-direction: column;
+        align-items: center;
+    }
+    .especiales_article .especiales_article-text{
+        width: 100%;
+        }
+        
+    .especiales_img{
+        display: none;
+    }
+}
+   /* ------- 850px ------*/
+   
+     
+   @media (max-width: 850px) {
+     
+
+   }
+     /* ------- 690px ------*/
+   
+     @media (max-width: 690px) {
+        .especiales_article{
+            .especiales_article-text{
+                padding:2rem
+            }
+        } 
+      
+      
+  }
+  
+   /* ------- 490px ------*/
+   
+   @media (max-width: 490px) {
+    .especiales_article{
+        padding: 0rem;
+    }
+
+        .especiales_section {
+        padding:2rem
+        }
+   
+
+        
+   }
+   /* ------- 390px ------*/
+   
+   @media (max-width: 390px) {
+    
+    
+   }

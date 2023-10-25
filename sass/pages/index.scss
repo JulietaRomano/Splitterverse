@@ -13,7 +13,7 @@
 
   .portada-img{
 
-    background: url(../assets/portada.jpg);
+    background: url(../assets/portadas/portada_home.jpg);
     background-size: cover;
     animation: background-move 5s  linear alternate;
     height: 100vh;
@@ -25,7 +25,7 @@
     }
     /* ------- 850px ------*/
     @media (max-width: 850px) {
-        background: url(../assets/portada_responsive.jpg);
+        background: url(../assets/portadas/portada_home_responsive.jpg);
         background-size: cover;
         background-position: center;
         animation: background-move 5s  linear alternate;
@@ -405,6 +405,11 @@
 
 .section-redes{
     margin-top: 4rem;
+    .redes_mail{
+      color: white;
+      text-align: center;
+      margin:.5rem;
+    }
     /* ------- 1200 ------*/
  
     @media (max-width: 1200px) {
@@ -414,7 +419,7 @@
   .redes-img-bg{
     height: 100vh;
     margin-top: 4rem;
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.154) 0%, rgba(0, 0, 0, 0.035) 75%, #000000e4 100%),  url(../assets/redes-img.jpg);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.154) 0%, rgba(0, 0, 0, 0.035) 75%, #000000e4 100%),  url(../../assets/home/redes-img.jpg);
     background-size: cover;
     display: flex;
     justify-content:end;
