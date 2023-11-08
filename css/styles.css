@@ -1397,16 +1397,18 @@ h1 {
     .capitulosGenHeader .capitulos_flechaBack:hover {
       transform: translateX(-10px); }
 
-.capitulosGenerales_sectionContainer .pagina {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #1f1f1f; }
-  .capitulosGenerales_sectionContainer .pagina img {
-    height: 100%;
-    width: 650px; }
+.capitulosGenerales_sectionContainer {
+  margin-top: 10px; }
+  .capitulosGenerales_sectionContainer .pagina {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f; }
+    .capitulosGenerales_sectionContainer .pagina img {
+      height: 100%;
+      width: 650px; }
 
 /* .main section:nth-child(1) {
     background-color: #1f1f1f;
