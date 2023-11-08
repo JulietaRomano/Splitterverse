@@ -102,3 +102,72 @@ $('.slide-nav').on('click', function(e) {
     }, 800);
   }
 });
+
+
+
+//Capitulos
+
+
+function pagination() {
+  var offset = $(document).scrollTop();
+  var windowHeight = $(window).height();
+  var currentPage = Math.ceil(offset / windowHeight);
+
+  for (var i = 1; i <= 42; i++) {
+    var pageClass = '.current-page' + i;
+
+    if (i === currentPage) {
+      $(pageClass).removeClass('link-noactive').addClass('link-active');
+    } else {
+      $(pageClass).removeClass('link-active');
+    }
+  }
+}
+
+pagination();
+
+$(document).on('scroll', pagination);
+
+$(document).on('click', 'a[href^="#"]', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelector('.botonera_slider-container');
+    const prevButton = document.querySelector('.btn-pag_prev');
+    const nextButton = document.querySelector('.btn-pag_next');
+    const totalSlides = 2; // Número total de slides
+    let currentSlide = 1;
+
+    function updateSlide() {
+        slides.style.transform = `translateX(-${(currentSlide - 1) * 100}%)`;
+    }
+
+    prevButton.addEventListener('click', function() {
+        if (currentSlide > 1) {
+            currentSlide--;
+            updateSlide();
+        }
+    });
+
+    nextButton.addEventListener('click', function() {
+        if (currentSlide < totalSlides) {
+            currentSlide++;
+            updateSlide();
+        }
+    });
+});

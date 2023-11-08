@@ -1,0 +1,280 @@
+.capitulosGenHeader{
+  padding: 6px 40px ;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #131313;
+  .capitulos_flechaBack{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    &:hover {
+      transform: translateX(-10px);
+    }
+  }
+}
+
+
+
+.capitulosGenerales_sectionContainer {
+    .pagina {
+    margin: 0;
+    height: 100vh;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #1f1f1f;
+     img{
+        height: 100%;
+        width: 650px;
+      }
+    }
+    
+}
+  /* .main section:nth-child(1) {
+    background-color: #1f1f1f;
+  }
+  .main section:nth-child(2) {
+    background-color: #495f5f;
+  }
+  .main section:nth-child(3) {
+    background-color: #546d6d;
+  }
+  .main section:nth-child(4) {
+    background-color: #5f7c7c;
+  }
+  .main section:nth-child(5) {
+    background-color: #6b8a8a;
+  } */
+//   .main section h1 {
+//     font-size: 38px;
+//     color: #fff;
+//     margin: 0;
+//     padding: 50px 0 20px;
+//     text-align: center;
+//   }
+
+
+  
+  /* #pagination {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 30px;
+    list-style: none;
+  }
+  #pagination li {
+    position: relative;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    transition: all .2s ease;
+  }
+  #pagination li:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  #pagination a {
+    position: absolute;
+    text-decoration: none;
+    left: 0;
+    top: 0;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+  } */
+  
+
+/*   
+  body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-type(2), body.page-3 #pagination li:nth-of-type(3), body.page-4 #pagination li:nth-of-type(4), body.page-5 #pagination li:nth-of-type(5), body.page-6 #pagination li:nth-of-type(6), body.page-7 #pagination li:nth-of-type(7)  {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        background-color: #1f1f1f;
+  }
+   */
+
+
+
+
+
+
+
+
+
+
+  /* PAGINATION 
+.paginacion{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(148, 148, 148);
+    width: 100%;
+}
+.pagination {
+  
+    text-align: center;
+    margin: 1em;
+    user-select: none;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0.3em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.3);
+}
+
+.pagination li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 2.6em;
+}
+
+.previous-page,
+.next-page {
+    background: #0AB1CE;
+    width: 5em;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.previous-page:hover {
+    transform: translateX(-5px);
+}
+
+.next-page:hover {
+    transform: translateX(5px);
+}
+
+.current-page{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color:#fff;
+
+}
+
+
+.current-page:hover,
+.dots:hover {
+    transform: translateY(-5px);
+}
+
+.pagination .link-active{
+    background: #ed6c6c;
+}
+
+
+.pagination li.disable {
+    background: #ccc;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.botonera_slider {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.894);
+  padding: .5rem 0px;
+}
+
+.botonera_slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.botonera_slider-caja {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.botonera_slider-lista {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+ /* PAGINATION */
+
+.pagination {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.pagination li {
+  padding: 19px;
+  font-size: 18px;
+  background-color: #303030;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.3);
+  text-decoration: none;
+  color: #fff;
+}
+.pagination .btn-pag{
+  color: black;
+  background-color: #dd7e43;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+}
+
+.pagination .btn-pag:hover {
+  transform: translateX(5px);
+}
+
+
+
+
+
+.current-page{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color:#fff;
+text-decoration: none;
+}
+
+
+.current-page:hover,
+.dots:hover {
+  transform: translateY(-5px);
+}
+
+.pagination .link-active{
+  background: #ff6000;
+}
+
+
+.pagination li.disable {
+  background: #ccc;
+}
+

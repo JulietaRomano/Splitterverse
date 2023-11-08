@@ -4,61 +4,26 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: rgb(0, 0, 0);
 }
 
-.fondo_prueba{
+.capitulos_listado{
 	background-image: url(../../assets/desenfocada/image1.jpg);
 	background-size: cover;
+	background-position: center;
+	padding: 4.5rem;
 }
 
-// .capitulos_list-container{
-// 	width: 65%;
-// 	margin: auto;
-// 	padding: 0;
-	
-// 	.capitulos_list-ul{
-// 			padding: 0;
-		
-// 		.capitulos_list-li{
-// 			color: rgb(0, 0, 0);
-// 			background-color: #fffd51;
-// 			list-style: none;
-// 			display: flex;
-// 			justify-content: space-between;
-// 			align-items: center;
-// 			border-bottom: solid rgba(0, 0, 0, 0.123) 2px;
-// 			padding: .5rem 2rem;
-			
-// 			.capitulos_list-lidivImg{
-// 				display: flex;
-// 				align-items: center;
-// 				img{
-// 					width: 8rem;
-// 					margin-right: 4rem;
-// 				}
-// 			}
-// 			.capitulos_list-lidivText{
-// 				display: flex;
-// 				width: 30%;
-// 				justify-content: space-between;
-// 			}
 
-// 			&:hover{
-// 				background-color: #ff6000;
-// 				padding-left: 0rem;
-// 			}
-// 		}
-// 	}
-// }
-
-
-.container {
+.capitulos_listado-container {
 	display: flex;
 	justify-content: space-around;
-	background-color: rgba(0, 0, 0, 0.655);
-	padding: 1rem;
+	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.466);
+	border-radius:16px;
 	.descripcion_cap{
-		background-color: rgba(255, 255, 255, 0.938);
+		background-color: rgba(0, 0, 0, 0.938);
+		color: white;
 		width: 25rem;
 		border-radius: 4px;
 		padding: 2.5rem;
@@ -75,7 +40,7 @@
   }
   
   .titulo_card-cap {
-	color: #262626;
+	color: white;
 	font-size: 25px;
 	line-height: 24px;
 	font-weight: 700;
@@ -85,30 +50,30 @@
 	.small {
 	  font-size: 17px;
 	  line-height: 20px;
-	  color: #666666;
+	  color: white;
 	  text-align: none;
 	}
   
-  .go-corner {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	width: 32px;
-	height: 32px;
-	overflow: hidden;
-	top: 0;
-	right: 0;
-	background-color: #ff6000;
-	border-radius: 0 4px 0 32px;
-  }
+//   .go-corner {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	position: absolute;
+// 	width: 32px;
+// 	height: 32px;
+// 	overflow: hidden;
+// 	top: 0;
+// 	right: 0;
+// 	background-color: #ff6000;
+// 	border-radius: 0 4px 0 32px;
+//   }
   
-  .go-arrow {
-	margin-top: -6px;
-	margin-right: 5px;
-	color: white;
-	font-family: courier, sans;
-  }
+//   .go-arrow {
+// 	margin-top: -6px;
+// 	margin-right: 5px;
+// 	color: rgb(0, 0, 0);
+// 	font-family: courier, sans;
+//   }
   .cardiflex{
 	display: flex;
   }
@@ -117,7 +82,7 @@
 	display: block;
 	position: relative;
 	max-width: 800px;
-	background-color: #f2f8f9;
+	background-color: #000000;
 	border-radius: 4px;
 	padding: 22px 14px;
 	margin: 12px;
@@ -126,7 +91,7 @@
 	overflow: hidden;
 	img{
 		width: 10rem;
-		height: 10rem;;
+		height: 10rem;
 	}
 	.card1_text{
 		margin-left: 2rem;
@@ -136,24 +101,13 @@
 		justify-content: space-evenly;
 	}
   
-	&:before {
-	  content: "";
-	  position: absolute;
-	  z-index: -1;
-	  top: -10px;
-	  right: -10px;
-	  background: #ff6000;
-	  height: 65px;
-	  width: 65px;
-	  border-radius: 32px;
-	  transform: scale(1);
-	  transform-origin: 50% 50%;
-	  transition: transform 0.25s ease-out;
+	&:hover{
+		background: #ff62008f;
 	}
-  
-	&:hover:before {
-	  transform: scale(25);
+	&:hover img{
+		transform: scale(1.2);
 	}
+
   }
   
   .card1:hover {

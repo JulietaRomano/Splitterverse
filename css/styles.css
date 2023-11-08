@@ -1208,9 +1208,8 @@ h1 {
 .portada_especiales {
   height: 350px;
   width: 1440px;
-  background-image: url(../../assets/portadas/);
-  background-size: cover;
-  background-position: 0px -550px; }
+  background-position: center;
+  background-size: contain; }
 
 .texto_especiales {
   font-size: 1.2rem; }
@@ -1309,31 +1308,36 @@ h1 {
   background-color: rgba(134, 132, 132, 0.519);
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-color: black; }
 
-.fondo_prueba {
+.capitulos_listado {
   background-image: url(../../assets/desenfocada/image1.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  padding: 4.5rem; }
 
-.container {
+.capitulos_listado-container {
   display: flex;
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.655);
-  padding: 1rem; }
-  .container .descripcion_cap {
-    background-color: rgba(255, 255, 255, 0.938);
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.466);
+  border-radius: 16px; }
+  .capitulos_listado-container .descripcion_cap {
+    background-color: rgba(0, 0, 0, 0.938);
+    color: white;
     width: 25rem;
     border-radius: 4px;
     padding: 2.5rem;
     height: 750px; }
-    .container .descripcion_cap img {
+    .capitulos_listado-container .descripcion_cap img {
       width: 20rem;
       margin-bottom: 3rem; }
-    .container .descripcion_cap p {
+    .capitulos_listado-container .descripcion_cap p {
       text-align: left; }
 
 .titulo_card-cap {
-  color: #262626;
+  color: white;
   font-size: 25px;
   line-height: 24px;
   font-weight: 700;
@@ -1342,27 +1346,8 @@ h1 {
 .small {
   font-size: 17px;
   line-height: 20px;
-  color: #666666;
-  text-align: none; }
-
-.go-corner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  background-color: #ff6000;
-  border-radius: 0 4px 0 32px; }
-
-.go-arrow {
-  margin-top: -6px;
-  margin-right: 5px;
   color: white;
-  font-family: courier, sans; }
+  text-align: none; }
 
 .cardiflex {
   display: flex; }
@@ -1371,7 +1356,7 @@ h1 {
   display: block;
   position: relative;
   max-width: 800px;
-  background-color: #f2f8f9;
+  background-color: #000000;
   border-radius: 4px;
   padding: 22px 14px;
   margin: 12px;
@@ -1387,21 +1372,10 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; }
-  .card1:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -10px;
-    right: -10px;
-    background: #ff6000;
-    height: 65px;
-    width: 65px;
-    border-radius: 32px;
-    transform: scale(1);
-    transform-origin: 50% 50%;
-    transition: transform 0.25s ease-out; }
-  .card1:hover:before {
-    transform: scale(25); }
+  .card1:hover {
+    background: #ff62008f; }
+  .card1:hover img {
+    transform: scale(1.2); }
 
 .card1:hover .small {
   transition: all 0.3s ease-out;
@@ -1410,6 +1384,220 @@ h1 {
 .card1:hover .titulo_card-cap {
   transition: all 0.3s ease-out;
   color: #ffffff; }
+
+.capitulosGenHeader {
+  padding: 6px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #131313; }
+  .capitulosGenHeader .capitulos_flechaBack {
+    color: white;
+    font-size: 30px; }
+    .capitulosGenHeader .capitulos_flechaBack:hover {
+      transform: translateX(-10px); }
+
+.capitulosGenerales_sectionContainer .pagina {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1f1f; }
+  .capitulosGenerales_sectionContainer .pagina img {
+    height: 100%;
+    width: 650px; }
+
+/* .main section:nth-child(1) {
+    background-color: #1f1f1f;
+  }
+  .main section:nth-child(2) {
+    background-color: #495f5f;
+  }
+  .main section:nth-child(3) {
+    background-color: #546d6d;
+  }
+  .main section:nth-child(4) {
+    background-color: #5f7c7c;
+  }
+  .main section:nth-child(5) {
+    background-color: #6b8a8a;
+  } */
+/* #pagination {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 30px;
+    list-style: none;
+  }
+  #pagination li {
+    position: relative;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    transition: all .2s ease;
+  }
+  #pagination li:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  #pagination a {
+    position: absolute;
+    text-decoration: none;
+    left: 0;
+    top: 0;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+  } */
+/*   
+  body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-type(2), body.page-3 #pagination li:nth-of-type(3), body.page-4 #pagination li:nth-of-type(4), body.page-5 #pagination li:nth-of-type(5), body.page-6 #pagination li:nth-of-type(6), body.page-7 #pagination li:nth-of-type(7)  {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        background-color: #1f1f1f;
+  }
+   */
+/* PAGINATION 
+.paginacion{
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(148, 148, 148);
+    width: 100%;
+}
+.pagination {
+  
+    text-align: center;
+    margin: 1em;
+    user-select: none;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0.3em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.3);
+}
+
+.pagination li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 2.6em;
+}
+
+.previous-page,
+.next-page {
+    background: #0AB1CE;
+    width: 5em;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.previous-page:hover {
+    transform: translateX(-5px);
+}
+
+.next-page:hover {
+    transform: translateX(5px);
+}
+
+.current-page{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color:#fff;
+
+}
+
+
+.current-page:hover,
+.dots:hover {
+    transform: translateY(-5px);
+}
+
+.pagination .link-active{
+    background: #ed6c6c;
+}
+
+
+.pagination li.disable {
+    background: #ccc;
+}
+
+*/
+.botonera_slider {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.894);
+  padding: .5rem 0px; }
+
+.botonera_slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out; }
+
+.botonera_slider-caja {
+  flex-shrink: 0;
+  width: 100%; }
+
+.botonera_slider-lista {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  user-select: none; }
+
+.pagination li {
+  padding: 19px;
+  font-size: 18px;
+  background-color: #303030;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.3);
+  text-decoration: none;
+  color: #fff; }
+
+.pagination .btn-pag {
+  color: black;
+  background-color: #dd7e43;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem; }
+
+.pagination .btn-pag:hover {
+  transform: translateX(5px); }
+
+.current-page {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none; }
+
+.current-page:hover,
+.dots:hover {
+  transform: translateY(-5px); }
+
+.pagination .link-active {
+  background: #ff6000; }
+
+.pagination li.disable {
+  background: #ccc; }
 
 /* ----------------------- PAGINA 404 --------------------------*/
 .notfound {
