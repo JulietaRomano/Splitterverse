@@ -20,8 +20,13 @@
 .portada_especiales{
     height: 350px;
     width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-position: center;
-    background-size:contain;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/banner_transformado.png);
     
     
 }
@@ -41,6 +46,7 @@
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.466);
     margin-bottom: 4rem;
+    margin-top: 6rem;
     .especiales_img{
         border-radius: 16px;
         padding: 2rem;
