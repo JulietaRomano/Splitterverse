@@ -1216,7 +1216,7 @@ h1 {
 
 .especiales_section {
   padding: 4.5rem;
-  background-image: url(../../assets/desenfocada/image1.jpg);
+  background-image: url(../assets/desenfocada/image1.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -1312,7 +1312,7 @@ h1 {
   background-color: black; }
 
 .capitulos_listado {
-  background-image: url(../../assets/desenfocada/image1.jpg);
+  background-image: url(../assets/desenfocada/image1.jpg);
   background-size: cover;
   background-position: center;
   padding: 4.5rem; }
