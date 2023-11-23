@@ -1414,129 +1414,9 @@ h1 {
     justify-content: center;
     background-color: #1f1f1f; }
     .capitulosGenerales_sectionContainer .pagina img {
-      height: 100%;
-      width: 650px; }
+      height: 100%; }
 
-/* .main section:nth-child(1) {
-    background-color: #1f1f1f;
-  }
-  .main section:nth-child(2) {
-    background-color: #495f5f;
-  }
-  .main section:nth-child(3) {
-    background-color: #546d6d;
-  }
-  .main section:nth-child(4) {
-    background-color: #5f7c7c;
-  }
-  .main section:nth-child(5) {
-    background-color: #6b8a8a;
-  } */
-/* #pagination {
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    right: 30px;
-    list-style: none;
-  }
-  #pagination li {
-    position: relative;
-    margin: 20px 0;
-    background: #fff;
-    border-radius: 100%;
-    width: 8px;
-    height: 8px;
-    transition: all .2s ease;
-  }
-  #pagination li:hover {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  #pagination a {
-    position: absolute;
-    text-decoration: none;
-    left: 0;
-    top: 0;
-    color: inherit;
-    width: 100%;
-    height: 100%;
-  } */
-/*   
-  body.page-1 #pagination li:nth-of-type(1), body.page-2 #pagination li:nth-of-type(2), body.page-3 #pagination li:nth-of-type(3), body.page-4 #pagination li:nth-of-type(4), body.page-5 #pagination li:nth-of-type(5), body.page-6 #pagination li:nth-of-type(6), body.page-7 #pagination li:nth-of-type(7)  {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-        background-color: #1f1f1f;
-  }
-   */
-/* PAGINATION 
-.paginacion{
-    position: fixed;
-    bottom: 0;
-    background-color: rgb(148, 148, 148);
-    width: 100%;
-}
-.pagination {
-  
-    text-align: center;
-    margin: 1em;
-    user-select: none;
-}
-
-.pagination li {
-    display: inline-block;
-    margin: 0.3em;
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 0.3);
-}
-
-.pagination li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1em;
-    line-height: 2.6em;
-}
-
-.previous-page,
-.next-page {
-    background: #0AB1CE;
-    width: 5em;
-    border-radius: 45px;
-    cursor: pointer;
-}
-
-.previous-page:hover {
-    transform: translateX(-5px);
-}
-
-.next-page:hover {
-    transform: translateX(5px);
-}
-
-.current-page{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    cursor: pointer;
-    color:#fff;
-
-}
-
-
-.current-page:hover,
-.dots:hover {
-    transform: translateY(-5px);
-}
-
-.pagination .link-active{
-    background: #ed6c6c;
-}
-
-
-.pagination li.disable {
-    background: #ccc;
-}
-
-*/
+/* Botonera*/
 .botonera_slider {
   overflow: hidden;
   position: fixed;
@@ -1607,6 +1487,16 @@ h1 {
 
 .pagination li.disable {
   background: #ccc; }
+
+.fa-arrow-right {
+  font-size: 1.8rem; }
+
+/*MEDIA QUERIES*/
+@media (max-width: 810px) {
+  .capitulosGenerales_sectionContainer .pagina img {
+    width: 100vw; }
+  .capitulosGenerales_sectionContainer .pagina {
+    height: 100%; } }
 
 /* ----------------------- PAGINA 404 --------------------------*/
 .notfound {
