@@ -117,26 +117,35 @@
 
   /* ---------------------------- Media queries -------------------------- */
 
-  /* ------- 1100 ------ */
-  
-  @media (max-width: 1120px) {
 
-  }
   
   /* ------- 998 ------ */
   
   @media (max-width: 998px) {
+    .especiales_section {
+        padding: .5rem;
+    }
     .especiales_article{
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 0;
     }
     .especiales_article .especiales_article-text{
         width: 100%;
         }
-        
-    .especiales_img{
-        display: none;
+    .especiales_article .especiales_img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+         img{
+            width: 40%;
+            margin-bottom: 0rem;
+        }
+        .especiales_textos-fichaTecnica{
+            margin-left: 3rem;
+        }
+
     }
+
 }
    /* ------- 850px ------*/
    

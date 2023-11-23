@@ -53,7 +53,8 @@ h1 {
   color: var(--color-primary);
   margin-bottom: 3rem;
   font-weight: 700;
-  line-height: 6.875rem; }
+  line-height: 6.875rem;
+  text-align: center; }
 
 .titulo_personajes {
   font-family: var(--titulo-font-family);
@@ -1284,16 +1285,24 @@ h1 {
     margin-bottom: 2rem; }
 
 /* ---------------------------- Media queries -------------------------- */
-/* ------- 1100 ------ */
 /* ------- 998 ------ */
 @media (max-width: 998px) {
+  .especiales_section {
+    padding: .5rem; }
   .especiales_article {
-    flex-direction: column;
-    align-items: center; }
+    flex-wrap: wrap;
+    margin-top: 0; }
   .especiales_article .especiales_article-text {
     width: 100%; }
-  .especiales_img {
-    display: none; } }
+  .especiales_article .especiales_img {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .especiales_article .especiales_img img {
+      width: 40%;
+      margin-bottom: 0rem; }
+    .especiales_article .especiales_img .especiales_textos-fichaTecnica {
+      margin-left: 3rem; } }
 
 /* ------- 850px ------*/
 /* ------- 690px ------*/
@@ -1328,7 +1337,7 @@ h1 {
   justify-content: space-around;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.466);
-  border-radius: 16px;
+  border-radius: 1 rem;
   margin-top: 6rem; }
   .capitulos_listado-container .descripcion_cap {
     background-color: rgba(0, 0, 0, 0.938);
@@ -1336,23 +1345,23 @@ h1 {
     width: 25rem;
     border-radius: 4px;
     padding: 2.5rem;
-    height: 750px; }
+    height: 46.875rem; }
     .capitulos_listado-container .descripcion_cap img {
-      width: 20rem;
+      width: 100%;
       margin-bottom: 3rem; }
     .capitulos_listado-container .descripcion_cap p {
       text-align: left; }
 
 .titulo_card-cap {
   color: white;
-  font-size: 25px;
-  line-height: 24px;
+  font-size: 1.5625rem;
+  line-height: 1.5rem;
   font-weight: 700;
-  margin-bottom: 4px; }
+  margin-bottom: 0.25rem; }
 
 .small {
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
   color: white;
   text-align: none; }
 
@@ -1364,9 +1373,9 @@ h1 {
   position: relative;
   max-width: 800px;
   background-color: #000000;
-  border-radius: 4px;
-  padding: 22px 14px;
-  margin: 12px;
+  border-radius: 0.25rem;
+  padding: 1.375rem 0.875rem;
+  margin: 0rem 0.75rem 0.75rem 0.75rem;
   text-decoration: none;
   z-index: 0;
   overflow: hidden; }
@@ -1391,6 +1400,55 @@ h1 {
 .card1:hover .titulo_card-cap {
   transition: all 0.3s ease-out;
   color: #ffffff; }
+
+/* ------- MEDIA QUERIES ------*/
+@media (max-width: 1070px) {
+  .capitulos_listado {
+    padding: 6rem 0 0 0; }
+  .capitulos_listado-container {
+    margin-top: 0rem; } }
+
+@media (max-width: 990px) {
+  .capitulos_listado {
+    padding: 0; }
+  .capitulos_listado-container {
+    flex-wrap: wrap-reverse; }
+  .capitulos_listado-container .descripcion_cap {
+    width: 100%;
+    height: 0%;
+    display: flex;
+    margin-bottom: 2rem; }
+    .capitulos_listado-container .descripcion_cap img {
+      margin-bottom: 0rem;
+      width: 30vw;
+      height: 100%; }
+    .capitulos_listado-container .descripcion_cap .descripcion_cap-textos {
+      margin-left: 3rem; }
+      .capitulos_listado-container .descripcion_cap .descripcion_cap-textos p {
+        font-size: 1.2rem; }
+  .card1 {
+    max-width: 100%; }
+    .card1 .card1_text {
+      width: 100%;
+      max-width: 100vw; }
+  .capitulos_listado-cap {
+    width: 100%; } }
+
+@media (max-width: 700px) {
+  .capitulos_listado-container .descripcion_cap {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1.9rem; }
+    .capitulos_listado-container .descripcion_cap .descripcion_cap-textos {
+      text-align: center;
+      margin-top: 2rem;
+      margin-left: 0rem; }
+  .card1 {
+    padding: 1rem; }
+    .card1 .card1_text {
+      width: 100%;
+      max-width: 100vw; } }
 
 .capitulosGenHeader {
   padding: 6px 40px;
