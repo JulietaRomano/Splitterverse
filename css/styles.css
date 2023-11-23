@@ -13,6 +13,9 @@
   font-family: Made soulmaze;
   src: url(../assets/font/made_soulmaze/soulmaze.otf); }
 
+a {
+  text-decoration: none; }
+
 html {
   scroll-padding-top: calc(4.5rem - 1px); }
 
@@ -1451,19 +1454,19 @@ h1 {
       max-width: 100vw; } }
 
 .capitulosGenHeader {
-  padding: 6px 40px;
+  padding: 0.375rem 2.5rem;
   position: fixed;
   width: 100%;
   top: 0;
   background-color: #131313; }
   .capitulosGenHeader .capitulos_flechaBack {
     color: white;
-    font-size: 30px; }
+    font-size: 1.875rem; }
     .capitulosGenHeader .capitulos_flechaBack:hover {
       transform: translateX(-10px); }
 
 .capitulosGenerales_sectionContainer {
-  margin-top: 10px; }
+  margin-top: 0.625rem; }
   .capitulosGenerales_sectionContainer .pagina {
     margin: 0;
     height: 100vh;
@@ -1505,22 +1508,22 @@ h1 {
   user-select: none; }
 
 .pagination li {
-  padding: 19px;
-  font-size: 18px;
+  padding: 1.1875rem;
+  font-size: 1.125rem;
   background-color: #303030;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0.3em;
-  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.3);
+  box-shadow: 0 0.3125rem 1.5625rem rgba(1, 1, 1, 0.3);
   text-decoration: none;
   color: #fff; }
 
 .pagination .btn-pag {
   color: black;
   background-color: #dd7e43;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   cursor: pointer;
   width: 2rem;
   height: 2rem; }
@@ -1554,7 +1557,13 @@ h1 {
   .capitulosGenerales_sectionContainer .pagina img {
     width: 100vw; }
   .capitulosGenerales_sectionContainer .pagina {
-    height: 100%; } }
+    height: 100%; }
+  .pagination .link-active {
+    background-color: #303030; } }
+
+@media (max-width: 490px) {
+  .pagination li {
+    font-size: 1.4rem; } }
 
 /* ----------------------- PAGINA 404 --------------------------*/
 .notfound {
