@@ -1,0 +1,46 @@
+/* ---------------------------- Media queries -------------------------- */
+/* ------- 1200 ------ */
+@media (max-width: 1200px) {
+  * {
+    font-size: 14px;
+  }
+}
+/* ------- 991px ------*/
+@media (max-width: 991px) {
+  * {
+    font-size: 13px;
+  }
+  .fixed-top {
+    position: unset;
+  }
+}
+/* ------- 850px ------*/
+@media (max-width: 850px) {
+  * {
+    font-size: 12px;
+  }
+}
+/* ------- 490px ------*/
+@media (max-width: 490px) {
+  * {
+    font-size: 11px;
+  }
+}
+/* ------- 420px ------*/
+@media (max-width: 420px) {
+  * {
+    font-size: 9px;
+  }
+}
+/* ------- 350px ------*/
+@media (max-width: 350px) {
+  * {
+    font-size: 9px;
+  }
+}
+/* ------- 300px ------*/
+@media (max-width: 300px) {
+  * {
+    font-size: 8px;
+  }
+}/*# sourceMappingURL=media_queries.css.map */

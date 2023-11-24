@@ -188,16 +188,34 @@
 
  }
  @media (max-width: 420px) {
+
+	
 	.capitulos_listado-container .descripcion_cap {
 		.descripcion_cap-textos {
 			p{
-			font-size: 1.3rem;
+			font-size: 1.6rem;
+			text-align: center;
+			margin: 1rem;
 			}
 			h3{
-				font-size: 2.2rem;
+				font-size: 2.5rem;
 			}
 		}
 		
+			img {
+				margin-bottom: 0rem;
+				width: 50vw;
+				height: 100%;
+			}
+		
 	}
+	.titulo_card-cap{
+		font-size: 1.8rem;
+		line-height: 2rem;
+	}
+	.small {
+		font-size: 1.3rem;
+	  }
+	
   }
 

@@ -176,8 +176,23 @@
         .especiales_section {
         padding:2rem
         }
+   .texto_especiales{
+    font-size: 1.5rem;
+   }
    
 
+   .especiales_article .especiales_img .especiales_textos-fichaTecnica {
+    font-size: 1.5rem;
+
+    .especiales_textos-fichaTitulo{
+        font-size: 1.5rem;
+    }
+    border: red solid;
+   }
+   
+   .especiales_article .especiales_img .especiales_textos-fichaTecnica .especiales_textos-fichaSpan{
+    font-size: 1.5rem;
+   }
         
    }
    /* ------- 390px ------*/

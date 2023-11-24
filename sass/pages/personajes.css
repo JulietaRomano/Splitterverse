@@ -1,0 +1,457 @@
+/*---- Personajes seccion ------*/
+.textos-personajes {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.portada_personajes {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.portada_personajes .portada_personajes-img {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.415) 75%, #000 100%), url(../assets/portadas/portada_personajes.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  animation: background-move 5s linear alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portada_personajes .portada_personajes-img .portada_personajes-textos .container {
+  display: flex;
+  justify-content: center;
+}
+.portada_personajes .portada_personajes-img .portada_personajes-textos .chevron {
+  position: absolute;
+  width: 2.1rem;
+  height: 0.48rem;
+  bottom: -10rem;
+  opacity: 0;
+  transform: scale(0.3);
+  animation: move-chevron 3s ease-out infinite;
+}
+.portada_personajes .portada_personajes-img .portada_personajes-textos .chevron:first-child {
+  animation: move-chevron 3s ease-out 1s infinite;
+}
+.portada_personajes .portada_personajes-img .portada_personajes-textos .chevron:nth-child(2) {
+  animation: move-chevron 3s ease-out 2s infinite;
+}
+.portada_personajes .portada_personajes-img .portada_personajes-textos .chevron:before,
+.portada_personajes .portada_personajes-img .portada_personajes-textos .chevron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #ffffff;
+}
+.portada_personajes .portada_personajes-img .portada_personajes-textos .chevron:before {
+  left: 0;
+  transform: skewY(30deg);
+}
+.portada_personajes .portada_personajes-img .portada_personajes-textos .chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
+}
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+
+/*------------------- Slider ------------------*/
+.slider_container {
+  position: relative;
+  min-height: 100vh;
+  margin-top: 3rem;
+}
+
+/*- Botones con personajes para mover slider -*/
+.slider_botones {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.slider__navi {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: 90%;
+  width: 60%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: 999;
+}
+
+.slider__navi a {
+  display: block;
+  height: 6.25rem;
+  border-radius: 100%;
+  width: 6.25rem;
+  margin: 1.875rem 0;
+  text-indent: -624.9375rem;
+  box-shadow: none;
+  border: none;
+  background-image: url(../assets/personajes/marcos_personaje.jpg);
+  background-size: contain;
+}
+
+.slider__navi a:nth-child(2) {
+  background-image: url(../assets/home/sobre-nosotros_randal.png);
+}
+
+.slider__navi a:nth-child(3) {
+  background-image: url(../assets/personajes/vale_personaje.jpg);
+}
+
+.slider__navi a:nth-child(4) {
+  background-image: url(../assets/personajes/roby_personaje.jpg);
+}
+
+.slider__navi a:nth-child(5) {
+  background-image: url(../assets/personajes/victor_personaje.jpg);
+}
+
+.slider__navi a:nth-child(6) {
+  background-image: url(../assets/personajes/kuren_personaje.jpg);
+}
+
+.slider__navi a:nth-child(7) {
+  background-image: url(../assets/personajes/chicaParaguas_personaje.jpg);
+}
+
+.slider__navi a.active {
+  border: solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.56) 0rem 1.375rem 4.375rem 0.25rem;
+}
+
+/*----- Contenedores de personajes ----*/
+.flex__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  -o-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.flex__container.flex--active {
+  z-index: 2;
+}
+
+/*--------- Textos ---------*/
+/* -- Nombre difuminado -- */
+.text__background {
+  font-family: var(--titulo-font-family);
+  position: absolute;
+  left: 64px;
+  bottom: -3.75rem;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 144px;
+  font-weight: 700;
+}
+
+/*------------- Flex items-----------*/
+.flex__item {
+  height: 100vh;
+  color: rgba(255, 255, 255, 0.696);
+  transition: transform 0.1s linear;
+}
+
+.flex__item--left {
+  display: flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  width: 65%;
+  transform-origin: left bottom;
+  transition: transform 0.1s linear 0.4s;
+  opacity: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.flex__item--right {
+  width: 35%;
+  transform-origin: right center;
+  transition: transform 0.1s linear 0s;
+  opacity: 0;
+}
+
+.flex--preStart .flex__item--left,
+.flex--preStart .flex__item--right,
+.flex--active .flex__item--left,
+.flex--active .flex__item--right {
+  opacity: 1;
+}
+
+/*--------- Colores cajas de los personajes --------*/
+/* --- Marcos --- */
+.flex--marcos .flex__item--left {
+  background: #d15a1f;
+}
+
+.flex--marcos .flex__item--right {
+  background: #000000;
+}
+
+/* --- Randal  ---*/
+.flex--randal .flex__item--left {
+  background: #a27709;
+}
+
+.flex--randal .flex__item--right {
+  background: #020202;
+}
+
+/* --- Vale --- */
+.flex--vale .flex__item--left {
+  background: #791d65;
+}
+
+.flex--vale .flex__item--right {
+  background: #020202;
+}
+
+/* --- Roby ---*/
+.flex--roby .flex__item--left {
+  background: #476089;
+}
+
+.flex--roby .flex__item--right {
+  background: #020202;
+}
+
+/* --- Victor ---*/
+.flex--victor .flex__item--left {
+  background: #8e0702;
+}
+
+.flex--victor .flex__item--right {
+  background: #020202;
+}
+
+/* --- Kuren --- */
+.flex--kuren .flex__item--left {
+  background: #02798e;
+}
+
+.flex--kuren .flex__item--right {
+  background: #020202;
+}
+
+/* --- NUEVO --- */
+.flex--nuevo .flex__item--left {
+  background: #e10b1d;
+}
+
+.flex--nuevo .flex__item--right {
+  background: #020202;
+}
+
+/*---------- Imagenes -----------*/
+.flex__content {
+  margin-left: 5rem;
+  width: 55%;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
+}
+
+.personajes_img {
+  position: absolute;
+  bottom: 11rem;
+  right: 15%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0rem 3.375rem 3.4375rem, rgba(0, 0, 0, 0.12) 0rem -0.75rem 1.875rem, rgba(0, 0, 0, 0.12) 0rem 0.25rem 0.375rem, rgba(0, 0, 0, 0.17) 0rem 0.75rem 0.8125rem, rgba(0, 0, 0, 0.09) 0rem -0.1875rem 0.3125rem;
+  max-height: 35vw;
+  border-radius: 100%;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+}
+
+/* Animate-START point */
+.flex__container.animate--start .flex__content {
+  transform: translate3d(0, -200%, 0);
+  opacity: 0;
+}
+
+.flex__container.animate--start .personajes_img {
+  transform: translate3d(-12.5rem, 0, 0);
+  opacity: 0;
+}
+
+/* Animate-END point */
+.flex__container.animate--end .flex__item--left {
+  transform: scaleY(0);
+}
+
+.flex__container.animate--end .flex__item--right {
+  transform: scaleX(0);
+}
+
+.flex__container.animate--end .flex__content {
+  transform: translate3d(0, 200%, 0);
+  opacity: 0;
+}
+
+.flex__container.animate--end .personajes_img {
+  transform: translate3d(12.5rem, 0, 0);
+  opacity: 0;
+}
+
+.personajes_responsive {
+  display: none;
+}
+
+/* ---------------------------- Media queries -------------------------- */
+/* ------- 1374 ------ */
+@media (max-width: 1374px) {
+  /*img slider*/
+  .personajes_img {
+    bottom: 15.375rem;
+  }
+  /* Footer*/
+  .footerPages .redesContainer {
+    width: 35%;
+  }
+}
+/* ------- 1346 ------ */
+@media (max-width: 1346px) {
+  /*  --- Silder --- */
+  .slider_container {
+    min-height: 82vh;
+  }
+  .flex__container {
+    height: 82vh;
+  }
+  .flex__item {
+    height: 82vh;
+  }
+  /*img slider*/
+  .personajes_img {
+    bottom: 10.375rem;
+  }
+}
+/* ------- 1100 ------ */
+@media (max-width: 1120px) {
+  .textos-personajes {
+    font-size: 1.2rem;
+  }
+  /*img slider*/
+  .personajes_img {
+    bottom: 13.375rem;
+  }
+  /*Slider botones*/
+  .slider__navi {
+    width: 65%;
+  }
+}
+/* ------- 998 ------ */
+@media (max-width: 998px) {
+  .textos-personajes {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .slider_container {
+    display: none;
+  }
+  /*Personajes*/
+  .personajes_responsive {
+    display: block;
+  }
+  .personajes_responsive .personajes_responsive-cajas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 8rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0rem 3.375rem 3.4375rem, rgba(0, 0, 0, 0.12) 0rem -0.75rem 1.875rem, rgba(0, 0, 0, 0.12) 0rem 0.25rem 0.375rem, rgba(0, 0, 0, 0.17) 0rem 0.75rem 0.8125rem, rgba(0, 0, 0, 0.09) 0rem -0.1875rem 0.3125rem;
+  }
+  .personajes_responsive .personajes_responsive-cajas img {
+    height: 25rem;
+    border-radius: 100%;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0rem 3.375rem 3.4375rem, rgba(0, 0, 0, 0.12) 0rem -0.75rem 1.875rem, rgba(0, 0, 0, 0.12) 0rem 0.25rem 0.375rem, rgba(0, 0, 0, 0.17) 0rem 0.75rem 0.8125rem, rgba(0, 0, 0, 0.09) 0rem -0.1875rem 0.3125rem;
+  }
+  .personajes_responsive .personajes_responsive-cajas .text--normal {
+    font-size: 1.5rem;
+  }
+  .personajes_responsive .personajes_responsive-cajas .text--sub {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+  }
+}
+/* ------- 850px ------*/
+@media (max-width: 850px) {
+  .personajes_responsive .personajes_responsive-cajas {
+    padding: 5rem;
+  }
+}
+/* ------- 690px ------*/
+@media (max-width: 690px) {
+  .portada_personajes {
+    height: 100vh;
+  }
+  .portada_personajes .portada_personajes-img {
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.415) 75%, #000 100%), url(../assets/personajes_responsive.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .portada_personajes .portada_personajes-img .portada_personajes-textos .titulo_personajes {
+    display: none;
+  }
+  .portada_personajes .portada_personajes-img .portada_personajes-textos .container {
+    display: none;
+  }
+}
+/* ------- 490px ------*/
+@media (max-width: 490px) {
+  .portada_personajes {
+    height: 80vh;
+  }
+  .personajes_responsive .personajes_responsive-cajas {
+    padding: 5rem 3rem;
+  }
+  .text--big {
+    font-size: 4rem;
+  }
+}
+/* ------- 390px ------*/
+@media (max-width: 390px) {
+  .portada_personajes {
+    height: 80vh;
+  }
+}/*# sourceMappingURL=personajes.css.map */
