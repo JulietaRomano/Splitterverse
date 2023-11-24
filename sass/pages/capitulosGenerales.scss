@@ -128,7 +128,10 @@ text-decoration: none;
 }
 
 .fa-arrow-right{
-  font-size: 1.8rem;
+  font-size: 1rem;
+}
+.fa-arrow-left{
+  font-size: 1rem;
 }
 
 /*MEDIA QUERIES*/
@@ -150,7 +153,18 @@ text-decoration: none;
 }
 
 @media (max-width: 490px) {
+  .capitulosGenHeader {
+    padding: 1rem 2.5rem;
+  }
+
   .pagination li {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
+    padding: 1.7rem;
+  }
+  .fa-arrow-right{
+    font-size: 2rem;
+  }
+  .fa-arrow-left{
+    font-size: 2rem
   }
 }

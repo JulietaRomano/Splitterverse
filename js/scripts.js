@@ -78,34 +78,31 @@ var animateButton = function(e) {
 
 
 
-$('.slide-nav').on('click', function(e) {
-  e.preventDefault();
-  // get current slide
-  var current = $('.flex--active').data('slide'),
-    // get button data-slide
-    next = $(this).data('slide');
+// $('.slide-nav').on('click', function(e) {
+//   e.preventDefault();
+//   // get current slide
+//   var current = $('.flex--active').data('slide'),
+//     // get button data-slide
+//     next = $(this).data('slide');
 
-  $('.slide-nav').removeClass('active');
-  $(this).addClass('active');
+//   $('.slide-nav').removeClass('active');
+//   $(this).addClass('active');
   
 
-  if (current === next) {
-    return false;
-  } else {
-    $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
-    $('.flex--active').addClass('animate--end');
+//   if (current === next) {
+//     return false;
+//   } else {
+//     $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+//     $('.flex--active').addClass('animate--end');
 
 
-    setTimeout(function() {
-      $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
-      $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
-    }, 800);
-  }
-});
+//     setTimeout(function() {
+//       $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+//       $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+//     }, 800);
+//   }
+// });
 
-
-
-//Capitulos
 
 
 function pagination() {
@@ -113,7 +110,7 @@ function pagination() {
   var windowHeight = $(window).height();
   var currentPage = Math.ceil(offset / windowHeight);
 
-  for (var i = 1; i <= 42; i++) {
+  for (var i = 1; i <= 54; i++) { // Cambié el límite a 54
     var pageClass = '.current-page' + i;
 
     if (i === currentPage) {
@@ -129,12 +126,11 @@ pagination();
 $(document).on('scroll', pagination);
 
 $(document).on('click', 'a[href^="#"]', function(e) {
-    e.preventDefault();
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
 });
-
 
 
 

@@ -127,7 +127,9 @@
     }
     .especiales_article{
         flex-wrap: wrap;
-        margin-top: 0;
+        margin: 4rem 2rem 2rem;
+        background-color: rgb(0, 0, 0);
+        padding: 0rem;
     }
     .especiales_article .especiales_article-text{
         width: 100%;
@@ -144,16 +146,13 @@
             margin-left: 3rem;
         }
 
+         
+
     }
 
 }
-   /* ------- 850px ------*/
-   
-     
-   @media (max-width: 850px) {
-     
 
-   }
+
      /* ------- 690px ------*/
    
      @media (max-width: 690px) {
@@ -171,6 +170,7 @@
    @media (max-width: 490px) {
     .especiales_article{
         padding: 0rem;
+        margin: 1rem 0rem ;
     }
 
         .especiales_section {
@@ -183,6 +183,11 @@
    /* ------- 390px ------*/
    
    @media (max-width: 390px) {
-    
+    .texto_especiales {
+        font-size: 1.3rem;
+    }
+   .especiales_textos-fichaTecnica li{
+        font-size: 1.3rem;
+    }
     
    }
