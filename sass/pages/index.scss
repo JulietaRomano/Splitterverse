@@ -400,6 +400,28 @@
     background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
     }
   }
+
+
+  /*Dissable*/
+
+  .bubbly-button-dissable{
+    text-shadow: rgb(9, 0, 0) 0.1em 0.1em 0.2em;
+    font-family: var(--textos-font-family);
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    padding: .8em;
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fb8a44e5;
+    color:  #fff;
+    border-radius: 4px;
+    border: solid #fffc5145;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 145, 1, 0.621);
+  }
   
 /* ---------------------- REDES -----------------------*/
 

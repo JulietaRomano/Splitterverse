@@ -638,6 +638,25 @@ h1 {
     background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
     background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%; } }
 
+/*Dissable*/
+.bubbly-button-dissable {
+  text-shadow: #090000 0.1em 0.1em 0.2em;
+  font-family: var(--textos-font-family);
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  padding: .8em;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fb8a44e5;
+  color: #fff;
+  border-radius: 4px;
+  border: solid #fffc5145;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 145, 1, 0.621); }
+
 /* ---------------------- REDES -----------------------*/
 .section-redes {
   margin-top: 4rem;
@@ -891,8 +910,7 @@ h1 {
 /*------------------- Slider ------------------*/
 .slider_container {
   position: relative;
-  min-height: 100vh;
-  margin-top: 3rem; }
+  min-height: 100vh; }
 
 /*- Botones con personajes para mover slider -*/
 .slider_botones {
@@ -1324,8 +1342,7 @@ h1 {
   .texto_especiales {
     font-size: 1.5rem; }
   .especiales_article .especiales_img .especiales_textos-fichaTecnica {
-    font-size: 1.5rem;
-    border: red solid; }
+    font-size: 1.5rem; }
     .especiales_article .especiales_img .especiales_textos-fichaTecnica .especiales_textos-fichaTitulo {
       font-size: 1.5rem; }
   .especiales_article .especiales_img .especiales_textos-fichaTecnica .especiales_textos-fichaSpan {
@@ -1374,7 +1391,7 @@ h1 {
 
 .titulo_card-cap {
   color: white;
-  font-size: 1.5625rem;
+  font-size: 1.6rem;
   line-height: 1.5rem;
   font-weight: 700;
   margin-bottom: 2rem; }
@@ -1406,10 +1423,11 @@ h1 {
     margin-left: 2rem;
     width: 30rem;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
     .card1 .card1_text p {
       color: #ff6000;
-      font-size: 1.3rem; }
+      font-size: 1.4rem; }
   .card1:hover {
     background: #ff62008f; }
   .card1:hover p {
@@ -1497,6 +1515,14 @@ h1 {
   width: 100%;
   top: 0;
   background-color: #131313; }
+  .capitulosGenHeader .capitulosGenHeader-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    color: white; }
+    .capitulosGenHeader .capitulosGenHeader-div h1 {
+      font-size: 1.4rem; }
   .capitulosGenHeader .capitulos_flechaBack {
     color: white;
     font-size: 1.875rem; }
@@ -1593,16 +1619,43 @@ h1 {
 .fa-arrow-left {
   font-size: 1rem; }
 
+/*Especiales*/
+.capitulosGenerales_especiales {
+  padding-top: 2rem; }
+  .capitulosGenerales_especiales .pagina {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f; }
+    .capitulosGenerales_especiales .pagina img {
+      height: 100%;
+      width: 50%; }
+
 /*MEDIA QUERIES*/
 @media (max-width: 810px) {
+  .capitulosGenHeader .capitulosGenHeader-div h1 {
+    font-size: 1.6rem; }
+  .capitulosGenHeader {
+    padding: 0.6rem 2.5rem; }
   .capitulosGenerales_sectionContainer .pagina img {
     width: 100vw; }
   .capitulosGenerales_sectionContainer .pagina {
     height: 100%; }
   .pagination .link-active {
-    background-color: #303030; } }
+    background-color: #303030; }
+  .botonera_slider-container {
+    display: none; }
+  .fa-arrow-right {
+    font-size: 2rem; }
+  .fa-arrow-left {
+    font-size: 1.6rem; }
+  .capitulosGenerales_especiales .pagina img {
+    width: 70%; } }
 
 @media (max-width: 490px) {
+  .capitulosGenHeader .capitulosGenHeader-div h1 {
+    font-size: 2rem; }
   .capitulosGenHeader {
     padding: 1rem 2.5rem; }
   .pagination li {
@@ -1611,7 +1664,12 @@ h1 {
   .fa-arrow-right {
     font-size: 2rem; }
   .fa-arrow-left {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  /*Especiales*/
+  .capitulosGenerales_especiales {
+    padding-top: 4rem; }
+    .capitulosGenerales_especiales .pagina img {
+      width: 100%; } }
 
 /* ----------------------- PAGINA 404 --------------------------*/
 .notfound {

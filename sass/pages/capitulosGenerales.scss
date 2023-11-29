@@ -4,6 +4,16 @@
   width: 100%;
   top: 0;
   background-color: #131313;
+  .capitulosGenHeader-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    h1{
+      font-size: 1.4rem;
+    }
+  }
   .capitulos_flechaBack{
     color: rgb(255, 255, 255);
     font-size: 1.875rem;
@@ -134,10 +144,37 @@ text-decoration: none;
   font-size: 1rem;
 }
 
+
+/*Especiales*/
+
+.capitulosGenerales_especiales{
+  padding-top: 2rem;
+  .pagina {
+  margin: 0;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #1f1f1f;
+   img{
+      height: 100%;
+      width: 50%;
+    }
+  
+}
+
+}
+
 /*MEDIA QUERIES*/
 
 
 @media (max-width: 810px) {
+
+  .capitulosGenHeader .capitulosGenHeader-div h1 {
+    font-size: 1.6rem;
+  }
+  .capitulosGenHeader {
+    padding: 0.6rem 2.5rem;
+  }
  
   .capitulosGenerales_sectionContainer .pagina img {
     width: 100vw;
@@ -148,11 +185,31 @@ text-decoration: none;
   .pagination .link-active{
     background-color: #303030;
   }
-  
+  .botonera_slider-container {
+    display: none;
+  }
+  .fa-arrow-right{
+    font-size: 2rem;
+  }
+  .fa-arrow-left{
+    font-size: 1.6rem
+  }
+
+  .capitulosGenerales_especiales{
+    .pagina{
+    img{
+          width: 70%;
+        }
+    }
+  }
+
 
 }
 
 @media (max-width: 490px) {
+  .capitulosGenHeader .capitulosGenHeader-div h1 {
+    font-size: 2rem;
+  }
   .capitulosGenHeader {
     padding: 1rem 2.5rem;
   }
@@ -167,4 +224,18 @@ text-decoration: none;
   .fa-arrow-left{
     font-size: 2rem
   }
+
+  /*Especiales*/
+
+  .capitulosGenerales_especiales{
+    padding-top: 4rem;
+    .pagina{
+    img{
+          width: 100%;
+        }
+    }
+    
+  
+  }
+
 }

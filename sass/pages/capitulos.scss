@@ -43,7 +43,7 @@
   
   .titulo_card-cap {
 	color: white;
-	font-size: 1.5625rem;
+	font-size: 1.6rem;
 	line-height: 1.5rem;
 	font-weight: 700;
 	margin-bottom: 2rem;
@@ -80,9 +80,11 @@
 		width: 30rem;
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		
 		p{
 			color: #ff6000; 
-			font-size: 1.3rem;
+			font-size: 1.4rem;
 		}
 	}
   
