@@ -1,8 +1,13 @@
+/*Preloader*/
+
+$(window).load(function() {
+  $('#loading').hide();
+});
+
 
 $(document).ready(function(){
     $('html,body').scrollTop(0);
   });
-
 
 //navbar
 window.addEventListener('DOMContentLoaded', event => {
